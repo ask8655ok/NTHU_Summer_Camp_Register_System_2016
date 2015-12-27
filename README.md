@@ -2,7 +2,7 @@
 2016 Summer Camp Register System
 
 # Contact:
-<br> <p> facebook.com/yesray0216</p>
-<br> <p> yesray0216@gmail.com</p>
+<br>facebook.com/yesray0216
+<br>yesray0216@gmail.com
 <br> 
-<br> <p> facebook.com/tienchi.yang</p>
+<br>facebook.com/tienchi.yang
