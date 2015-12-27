@@ -53,3 +53,193 @@ Processing by PrivateDataController#new as HTML
   Rendered private_data/_form.html.erb (36.0ms)
   Rendered private_data/new.html.erb within layouts/application (51.1ms)
 Completed 200 OK in 101ms (Views: 71.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-12-27 14:23:13 +0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/railties-4.2.5/lib/rails/templates/rails/welcome/index.html.erb (1.5ms)
+Completed 200 OK in 21ms (Views: 11.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/private_data" for 127.0.0.1 at 2015-12-27 14:23:20 +0800
+Processing by PrivateDataController#index as HTML
+  [1m[35mPrivateDatum Load (0.1ms)[0m  SELECT "private_data".* FROM "private_data"
+  Rendered private_data/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 203ms (Views: 200.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/private_data/new" for 127.0.0.1 at 2015-12-27 14:23:22 +0800
+Processing by PrivateDataController#new as HTML
+  Rendered private_data/_form.html.erb (17.9ms)
+  Rendered private_data/new.html.erb within layouts/application (21.2ms)
+Completed 200 OK in 46ms (Views: 33.5ms | ActiveRecord: 0.2ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateGenders (20151227062503)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (1.1ms)[0m  [1mCREATE TABLE "genders" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20151227062503"]]
+  [1m[36m (8.8ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+
+Started GET "/private_data" for 127.0.0.1 at 2015-12-27 14:28:03 +0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PrivateDataController#index as HTML
+  [1m[35mPrivateDatum Load (0.2ms)[0m  SELECT "private_data".* FROM "private_data"
+  Rendered private_data/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 234ms (Views: 212.4ms | ActiveRecord: 0.4ms)
+  [1m[36mGender Load (1.5ms)[0m  [1mSELECT "genders".* FROM "genders"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO "genders" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "男生"], ["created_at", "2015-12-27 06:30:37.925696"], ["updated_at", "2015-12-27 06:30:37.925696"]]
+  [1m[35m (9.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "genders" ("name", "created_at", "updated_at") VALUES (?, ?, ?)  [["name", "女生"], ["created_at", "2015-12-27 06:30:46.384435"], ["updated_at", "2015-12-27 06:30:46.384435"]]
+  [1m[36m (8.6ms)[0m  [1mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+
+Started GET "/private_data" for 127.0.0.1 at 2015-12-27 14:34:07 +0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PrivateDataController#index as HTML
+  [1m[35mPrivateDatum Load (0.2ms)[0m  SELECT "private_data".* FROM "private_data"
+  Rendered private_data/index.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 229ms (Views: 215.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/private_data/new" for 127.0.0.1 at 2015-12-27 14:34:09 +0800
+Processing by PrivateDataController#new as HTML
+  Rendered private_data/_form.html.erb (27.4ms)
+  Rendered private_data/new.html.erb within layouts/application (30.8ms)
+Completed 500 Internal Server Error in 46ms (ActiveRecord: 0.4ms)
+
+ActionView::Template::Error (undefined method `has_may' for #<Class:0x007fa7bef236a0>):
+    21:   </div>
+    22:   <div class="field">
+    23:     <%= f.label :gender_id %><br>
+    24:     <%= f.select :gender_id, options_from_collection_for_select(Gender.all, :id, :name, @private_data.gender_id) %>
+    25:   </div>
+    26:   <div class="field">
+    27:     <%= f.label :birthy_id %><br>
+  app/models/gender.rb:2:in `<class:Gender>'
+  app/models/gender.rb:1:in `<top (required)>'
+  app/views/private_data/_form.html.erb:24:in `block in _app_views_private_data__form_html_erb___2037185576586014122_70179177611360'
+  app/views/private_data/_form.html.erb:1:in `_app_views_private_data__form_html_erb___2037185576586014122_70179177611360'
+  app/views/private_data/new.html.erb:3:in `_app_views_private_data_new_html_erb__2407644911467932879_70179219160780'
+
+
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.8ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.7ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.8ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (62.0ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (54.5ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (115.1ms)
+
+
+Started GET "/private_data/new" for 127.0.0.1 at 2015-12-27 14:34:10 +0800
+Processing by PrivateDataController#new as HTML
+  Rendered private_data/_form.html.erb (6.9ms)
+  Rendered private_data/new.html.erb within layouts/application (8.3ms)
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `has_may' for #<Class:0x007fa7bee655b0>):
+    21:   </div>
+    22:   <div class="field">
+    23:     <%= f.label :gender_id %><br>
+    24:     <%= f.select :gender_id, options_from_collection_for_select(Gender.all, :id, :name, @private_data.gender_id) %>
+    25:   </div>
+    26:   <div class="field">
+    27:     <%= f.label :birthy_id %><br>
+  app/models/gender.rb:2:in `<class:Gender>'
+  app/models/gender.rb:1:in `<top (required)>'
+  app/views/private_data/_form.html.erb:24:in `block in _app_views_private_data__form_html_erb___2037185576586014122_70179219672140'
+  app/views/private_data/_form.html.erb:1:in `_app_views_private_data__form_html_erb___2037185576586014122_70179219672140'
+  app/views/private_data/new.html.erb:3:in `_app_views_private_data_new_html_erb__2407644911467932879_70179194223140'
+
+
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.6ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.9ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (50.9ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (46.7ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (99.3ms)
+
+
+Started GET "/private_data/new" for 127.0.0.1 at 2015-12-27 14:34:19 +0800
+Processing by PrivateDataController#new as HTML
+  Rendered private_data/_form.html.erb (17.5ms)
+  Rendered private_data/new.html.erb within layouts/application (18.6ms)
+Completed 500 Internal Server Error in 43ms (ActiveRecord: 0.5ms)
+
+ActionView::Template::Error (undefined method `gender_id' for nil:NilClass):
+    21:   </div>
+    22:   <div class="field">
+    23:     <%= f.label :gender_id %><br>
+    24:     <%= f.select :gender_id, options_from_collection_for_select(Gender.all, :id, :name, @private_data.gender_id) %>
+    25:   </div>
+    26:   <div class="field">
+    27:     <%= f.label :birthy_id %><br>
+  app/views/private_data/_form.html.erb:24:in `block in _app_views_private_data__form_html_erb___2037185576586014122_70179219672140'
+  app/views/private_data/_form.html.erb:1:in `_app_views_private_data__form_html_erb___2037185576586014122_70179219672140'
+  app/views/private_data/new.html.erb:3:in `_app_views_private_data_new_html_erb__2407644911467932879_70179194223140'
+
+
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (14.2ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.7ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (60.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (43.7ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (102.0ms)
+
+
+Started GET "/private_data/new" for 127.0.0.1 at 2015-12-27 14:35:08 +0800
+Processing by PrivateDataController#new as HTML
+  [1m[36mGender Load (0.2ms)[0m  [1mSELECT "genders".* FROM "genders"[0m
+  Rendered private_data/_form.html.erb (27.2ms)
+  Rendered private_data/new.html.erb within layouts/application (28.4ms)
+Completed 200 OK in 44ms (Views: 43.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/private_data.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-12-27 14:35:08 +0800
+
+
+Started GET "/assets/scaffolds.self-343df791bb17b8f9283a055e6ac4b6d50d99af13f2705b6cbfa7e696837055e4.css?body=1" for 127.0.0.1 at 2015-12-27 14:35:08 +0800
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-12-27 14:35:08 +0800
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-12-27 14:35:08 +0800
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-12-27 14:35:08 +0800
+
+
+Started GET "/assets/private_data.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-27 14:35:08 +0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-12-27 14:35:08 +0800
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-12-27 14:35:08 +0800

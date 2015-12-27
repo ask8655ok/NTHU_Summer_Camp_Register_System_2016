@@ -21,7 +21,7 @@
   </div>
   <div class="field">
     <%= f.label :gender_id %><br>
-    <%= f.number_field :gender_id %>
+    <%= f.select :gender_id, options_from_collection_for_select(Gender.all, :id, :name, @private_datum.gender_id) %>
   </div>
   <div class="field">
     <%= f.label :birthy_id %><br>
