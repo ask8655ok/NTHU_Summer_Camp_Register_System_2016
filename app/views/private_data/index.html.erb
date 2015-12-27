@@ -1,58 +1,19 @@
 <% if user_signed_in? %>
-<p id="notice"><%= notice %></p>
-
-<h1>報名群組</h1>
-
-<table>
-  <% if false %>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Nickname</th>
-      <th>Gender</th>
-      <th>Birthy</th>
-      <th>Birthm</th>
-      <th>Birthd</th>
-      <th>Personcard</th>
-      <th>Blood</th>
-      <th>School</th>
-      <th>Schoolg</th>
-      <th>Schoolc</th>
-      <th>Schoolt</th>
-      <th>Address</th>
-      <th>Email</th>
-      <th>Fb</th>
-      <th>Cellphone</th>
-      <th>Urgentn</th>
-      <th>Urgentr</th>
-      <th>Urgentc</th>
-      <th>Specialeat</th>
-      <th>Specialsick</th>
-      <th>Vegetrian</th>
-      <th>Tshirtsize</th>
-      <th>Intro</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
+<% @private_data.each do |private_datum| %>
+  <% if private_datum.user==current_user %>
+  <div class="private_datum row clearfix">
+    <h2>
+      <%= link_to private_datum.name, private_datum %>
+      <small class="author"><%= time_ago_in_words(private_datum.created_at) %></small>
+    </h2>
+  </div>
+  <% end %>
 <% end %>
 
-  <tbody>
-    <% @private_data.each do |private_datum| %>
-      <% if current_user==private_datum.user %>
-      <tr>
-        <td><%= private_datum.name %></td>
-        <td><%= private_datum.nickname %></td>
-        <td><%= Gender.find(private_datum.gender_id).name %></td>
-        
-        <td><%= link_to '進入', private_datum %></td>
-        <td><%= link_to '刪除', private_datum, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-      <% end %>
-    <% end %>
-  </tbody>
-</table>
-
 <% else %>
-  <h1>動態消息</h1>
-  <h1>留言版</h1>
+<div class="private_datum row clearfix">
+  <h2>動態消息</h2>
+  <h2>留言板</h2>
+</div>
+
 <% end %>

@@ -1,5 +1,6 @@
 class PrivateDataController < ApplicationController
   before_action :set_private_datum, only: [:show, :edit, :update, :destroy]
+  before_filter :authenticate_user!, except: [:index, :show]
 
   # GET /private_data
   # GET /private_data.json
@@ -28,7 +29,7 @@ class PrivateDataController < ApplicationController
 
     respond_to do |format|
       if @private_datum.save
-        format.html { redirect_to @private_datum, notice: 'Private datum was successfully created.' }
+        format.html { redirect_to @private_datum, notice: '成功新增報名資料' }
         format.json { render :show, status: :created, location: @private_datum }
       else
         format.html { render :new }
@@ -42,7 +43,7 @@ class PrivateDataController < ApplicationController
   def update
     respond_to do |format|
       if @private_datum.update(private_datum_params)
-        format.html { redirect_to @private_datum, notice: 'Private datum was successfully updated.' }
+        format.html { redirect_to @private_datum, notice: '報名資料成功更新' }
         format.json { render :show, status: :ok, location: @private_datum }
       else
         format.html { render :edit }
@@ -56,7 +57,7 @@ class PrivateDataController < ApplicationController
   def destroy
     @private_datum.destroy
     respond_to do |format|
-      format.html { redirect_to private_data_url, notice: 'Private datum was successfully destroyed.' }
+      format.html { redirect_to private_data_url, notice: '報名資料成功刪除' }
       format.json { head :no_content }
     end
   end
