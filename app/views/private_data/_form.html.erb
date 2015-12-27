@@ -41,7 +41,7 @@
   </div>
   <div class="field">
     <%= f.label :blood_id %><br>
-    <%= f.number_field :blood_id %>
+    <%= f.select :blood_id, options_from_collection_for_select(Blood.all, :id, :name, @private_datum.gender_id) %>
   </div>
   <div class="field">
     <%= f.label :school %><br>
@@ -49,7 +49,7 @@
   </div>
   <div class="field">
     <%= f.label :schoolg_id %><br>
-    <%= f.number_field :schoolg_id %>
+    <%= f.select :schoolg_id, options_from_collection_for_select(Schoolg.all, :id, :name, @private_datum.gender_id) %>
   </div>
   <div class="field">
     <%= f.label :schoolc %><br>
@@ -57,7 +57,7 @@
   </div>
   <div class="field">
     <%= f.label :schoolt_id %><br>
-    <%= f.number_field :schoolt_id %>
+    <%= f.select :schoolt_id, options_from_collection_for_select(Schoolt.all, :id, :name, @private_datum.gender_id) %>
   </div>
   <div class="field">
     <%= f.label :address %><br>

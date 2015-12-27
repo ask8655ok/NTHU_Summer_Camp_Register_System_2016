@@ -482,3 +482,171 @@ Processing by PrivateDataController#new as HTML
   Rendered private_data/_form.html.erb (52.7ms)
   Rendered private_data/new.html.erb within layouts/application (55.2ms)
 Completed 200 OK in 130ms (Views: 91.8ms | ActiveRecord: 1.8ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateBloods (20151227065022)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mCREATE TABLE "bloods" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20151227065022"]]
+  [1m[36m (9.3ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "bloods" ("name", "created_at", "updated_at") VALUES (?, ?, ?)  [["name", "A"], ["created_at", "2015-12-27 06:51:12.461931"], ["updated_at", "2015-12-27 06:51:12.461931"]]
+  [1m[36m (8.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "bloods" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "B"], ["created_at", "2015-12-27 06:51:17.596925"], ["updated_at", "2015-12-27 06:51:17.596925"]]
+  [1m[35m (1.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "bloods" ("name", "created_at", "updated_at") VALUES (?, ?, ?)  [["name", "AB"], ["created_at", "2015-12-27 06:51:19.900913"], ["updated_at", "2015-12-27 06:51:19.900913"]]
+  [1m[36m (9.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "bloods" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "O"], ["created_at", "2015-12-27 06:51:22.792072"], ["updated_at", "2015-12-27 06:51:22.792072"]]
+  [1m[35m (8.6ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+
+Started GET "/private_data" for 127.0.0.1 at 2015-12-27 14:52:26 +0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PrivateDataController#index as HTML
+  [1m[35mPrivateDatum Load (0.1ms)[0m  SELECT "private_data".* FROM "private_data"
+  Rendered private_data/index.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 218ms (Views: 204.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/private_data/new" for 127.0.0.1 at 2015-12-27 14:52:27 +0800
+Processing by PrivateDataController#new as HTML
+  [1m[36mGender Load (0.2ms)[0m  [1mSELECT "genders".* FROM "genders"[0m
+  [1m[35mBirthy Load (0.1ms)[0m  SELECT "birthies".* FROM "birthies"
+  [1m[36mBirthm Load (0.2ms)[0m  [1mSELECT "birthms".* FROM "birthms"[0m
+  [1m[35mBirthd Load (0.2ms)[0m  SELECT "birthds".* FROM "birthds"
+  [1m[36mBlood Load (0.1ms)[0m  [1mSELECT "bloods".* FROM "bloods"[0m
+  Rendered private_data/_form.html.erb (47.9ms)
+  Rendered private_data/new.html.erb within layouts/application (51.3ms)
+Completed 200 OK in 114ms (Views: 98.6ms | ActiveRecord: 1.8ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateSchoolgs (20151227065317)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.4ms)[0m  [1mCREATE TABLE "schoolgs" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20151227065317"]]
+  [1m[36m (8.4ms)[0m  [1mcommit transaction[0m
+Migrating to CreateSchoolts (20151227065322)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mCREATE TABLE "schoolts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20151227065322"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.3ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "schoolgs" ("name", "created_at", "updated_at") VALUES (?, ?, ?)  [["name", "1"], ["created_at", "2015-12-27 06:55:06.427772"], ["updated_at", "2015-12-27 06:55:06.427772"]]
+  [1m[36m (9.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (1.1ms)[0m  [1mINSERT INTO "schoolgs" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "2"], ["created_at", "2015-12-27 06:55:08.724493"], ["updated_at", "2015-12-27 06:55:08.724493"]]
+  [1m[35m (8.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "schoolgs" ("name", "created_at", "updated_at") VALUES (?, ?, ?)  [["name", "3"], ["created_at", "2015-12-27 06:55:10.940133"], ["updated_at", "2015-12-27 06:55:10.940133"]]
+  [1m[36m (9.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "schoolts" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "第一類組"], ["created_at", "2015-12-27 06:55:20.437279"], ["updated_at", "2015-12-27 06:55:20.437279"]]
+  [1m[35m (8.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "schoolts" ("name", "created_at", "updated_at") VALUES (?, ?, ?)  [["name", "第二類組"], ["created_at", "2015-12-27 06:55:24.440833"], ["updated_at", "2015-12-27 06:55:24.440833"]]
+  [1m[36m (8.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "schoolts" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "第三類組"], ["created_at", "2015-12-27 06:55:27.856537"], ["updated_at", "2015-12-27 06:55:27.856537"]]
+  [1m[35m (7.9ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+
+Started GET "/private_data/new" for 127.0.0.1 at 2015-12-27 14:55:46 +0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PrivateDataController#new as HTML
+  [1m[35mGender Load (0.1ms)[0m  SELECT "genders".* FROM "genders"
+  [1m[36mBirthy Load (0.2ms)[0m  [1mSELECT "birthies".* FROM "birthies"[0m
+  [1m[35mBirthm Load (0.2ms)[0m  SELECT "birthms".* FROM "birthms"
+  [1m[36mBirthd Load (0.2ms)[0m  [1mSELECT "birthds".* FROM "birthds"[0m
+  [1m[35mBlood Load (0.2ms)[0m  SELECT "bloods".* FROM "bloods"
+  [1m[36mSchoolg Load (0.1ms)[0m  [1mSELECT "schoolgs".* FROM "schoolgs"[0m
+  [1m[35mSchoolt Load (0.2ms)[0m  SELECT "schoolts".* FROM "schoolts"
+  Rendered private_data/_form.html.erb (78.6ms)
+  Rendered private_data/new.html.erb within layouts/application (83.0ms)
+Completed 200 OK in 342ms (Views: 302.8ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/assets/private_data.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-12-27 14:55:47 +0800
+
+
+Started GET "/assets/scaffolds.self-343df791bb17b8f9283a055e6ac4b6d50d99af13f2705b6cbfa7e696837055e4.css?body=1" for 127.0.0.1 at 2015-12-27 14:55:47 +0800
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-12-27 14:55:47 +0800
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-12-27 14:55:47 +0800
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-12-27 14:55:47 +0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-12-27 14:55:47 +0800
+
+
+Started GET "/assets/private_data.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-27 14:55:47 +0800
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-12-27 14:55:47 +0800
+  [1m[36mSchoolg Load (1.1ms)[0m  [1mSELECT "schoolgs".* FROM "schoolgs"[0m
+  [1m[35mSchoolg Load (0.2ms)[0m  SELECT  "schoolgs".* FROM "schoolgs" WHERE "schoolgs"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mSchoolg Load (0.2ms)[0m  [1mSELECT  "schoolgs".* FROM "schoolgs" WHERE "schoolgs"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mSchoolg Load (0.1ms)[0m  SELECT  "schoolgs".* FROM "schoolgs" WHERE "schoolgs"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  UPDATE "schoolgs" SET "name" = ?, "updated_at" = ? WHERE "schoolgs"."id" = ?  [["name", "一年級"], ["updated_at", "2015-12-27 06:57:13.701216"], ["id", 1]]
+  [1m[36m (8.7ms)[0m  [1mcommit transaction[0m
+  [1m[35mSchoolg Load (0.2ms)[0m  SELECT  "schoolgs".* FROM "schoolgs" WHERE "schoolgs"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mSchoolg Load (0.1ms)[0m  [1mSELECT  "schoolgs".* FROM "schoolgs" WHERE "schoolgs"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "schoolgs" SET "name" = ?, "updated_at" = ? WHERE "schoolgs"."id" = ?[0m  [["name", "二年級"], ["updated_at", "2015-12-27 06:57:36.256744"], ["id", 2]]
+  [1m[35m (8.6ms)[0m  commit transaction
+  [1m[36mSchoolg Load (0.1ms)[0m  [1mSELECT  "schoolgs".* FROM "schoolgs" WHERE "schoolgs"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mSchoolg Load (0.1ms)[0m  SELECT  "schoolgs".* FROM "schoolgs" WHERE "schoolgs"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "schoolgs" SET "name" = ?, "updated_at" = ? WHERE "schoolgs"."id" = ?  [["name", "三年級"], ["updated_at", "2015-12-27 06:57:58.993670"], ["id", 3]]
+  [1m[36m (8.6ms)[0m  [1mcommit transaction[0m
+
+
+Started GET "/private_data/new" for 127.0.0.1 at 2015-12-27 14:58:14 +0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PrivateDataController#new as HTML
+  [1m[35mGender Load (0.1ms)[0m  SELECT "genders".* FROM "genders"
+  [1m[36mBirthy Load (0.2ms)[0m  [1mSELECT "birthies".* FROM "birthies"[0m
+  [1m[35mBirthm Load (0.2ms)[0m  SELECT "birthms".* FROM "birthms"
+  [1m[36mBirthd Load (0.2ms)[0m  [1mSELECT "birthds".* FROM "birthds"[0m
+  [1m[35mBlood Load (0.1ms)[0m  SELECT "bloods".* FROM "bloods"
+  [1m[36mSchoolg Load (0.1ms)[0m  [1mSELECT "schoolgs".* FROM "schoolgs"[0m
+  [1m[35mSchoolt Load (0.2ms)[0m  SELECT "schoolts".* FROM "schoolts"
+  Rendered private_data/_form.html.erb (75.1ms)
+  Rendered private_data/new.html.erb within layouts/application (79.3ms)
+Completed 200 OK in 326ms (Views: 290.9ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/assets/private_data.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-12-27 14:58:14 +0800
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-12-27 14:58:14 +0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-12-27 14:58:14 +0800
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-12-27 14:58:14 +0800
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-12-27 14:58:14 +0800
+
+
+Started GET "/assets/scaffolds.self-343df791bb17b8f9283a055e6ac4b6d50d99af13f2705b6cbfa7e696837055e4.css?body=1" for 127.0.0.1 at 2015-12-27 14:58:14 +0800
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-12-27 14:58:14 +0800
+
+
+Started GET "/assets/private_data.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-27 14:58:14 +0800
