@@ -25,15 +25,15 @@
   </div>
   <div class="field">
     <%= f.label :birthy_id %><br>
-    <%= f.number_field :birthy_id %>
+    <%= f.select :birthy_id, options_from_collection_for_select(Birthy.all, :id, :name, @private_datum.gender_id) %>
   </div>
   <div class="field">
     <%= f.label :birthm_id %><br>
-    <%= f.number_field :birthm_id %>
+    <%= f.select :birthm_id, options_from_collection_for_select(Birthm.all, :id, :name, @private_datum.gender_id) %>
   </div>
   <div class="field">
     <%= f.label :birthd_id %><br>
-    <%= f.number_field :birthd_id %>
+    <%= f.select :birthd_id, options_from_collection_for_select(Birthd.all, :id, :name, @private_datum.gender_id) %>
   </div>
   <div class="field">
     <%= f.label :personcard %><br>
