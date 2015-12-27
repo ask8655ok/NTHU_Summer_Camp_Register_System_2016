@@ -1,0 +1,53 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  nickname: MyString
+  gender_id: 1
+  birthy_id: 1
+  birthm_id: 1
+  birthd_id: 1
+  personcard: MyString
+  blood_id: 1
+  school: MyString
+  schoolg_id: 1
+  schoolc: MyString
+  schoolt_id: 1
+  address: MyString
+  email: MyString
+  fb: MyString
+  cellphone: MyString
+  urgentn: MyString
+  urgentr: MyString
+  urgentc: MyString
+  specialeat: MyString
+  specialsick: MyString
+  vegetrian_id: 1
+  tshirtsize_id: 1
+  intro: MyString
+
+two:
+  name: MyString
+  nickname: MyString
+  gender_id: 1
+  birthy_id: 1
+  birthm_id: 1
+  birthd_id: 1
+  personcard: MyString
+  blood_id: 1
+  school: MyString
+  schoolg_id: 1
+  schoolc: MyString
+  schoolt_id: 1
+  address: MyString
+  email: MyString
+  fb: MyString
+  cellphone: MyString
+  urgentn: MyString
+  urgentr: MyString
+  urgentc: MyString
+  specialeat: MyString
+  specialsick: MyString
+  vegetrian_id: 1
+  tshirtsize_id: 1
+  intro: MyString

@@ -1,0 +1,113 @@
+<%= form_for(@private_datum) do |f| %>
+  <% if @private_datum.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@private_datum.errors.count, "error") %> prohibited this private_datum from being saved:</h2>
+
+      <ul>
+      <% @private_datum.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :nickname %><br>
+    <%= f.text_field :nickname %>
+  </div>
+  <div class="field">
+    <%= f.label :gender_id %><br>
+    <%= f.number_field :gender_id %>
+  </div>
+  <div class="field">
+    <%= f.label :birthy_id %><br>
+    <%= f.number_field :birthy_id %>
+  </div>
+  <div class="field">
+    <%= f.label :birthm_id %><br>
+    <%= f.number_field :birthm_id %>
+  </div>
+  <div class="field">
+    <%= f.label :birthd_id %><br>
+    <%= f.number_field :birthd_id %>
+  </div>
+  <div class="field">
+    <%= f.label :personcard %><br>
+    <%= f.text_field :personcard %>
+  </div>
+  <div class="field">
+    <%= f.label :blood_id %><br>
+    <%= f.number_field :blood_id %>
+  </div>
+  <div class="field">
+    <%= f.label :school %><br>
+    <%= f.text_field :school %>
+  </div>
+  <div class="field">
+    <%= f.label :schoolg_id %><br>
+    <%= f.number_field :schoolg_id %>
+  </div>
+  <div class="field">
+    <%= f.label :schoolc %><br>
+    <%= f.text_field :schoolc %>
+  </div>
+  <div class="field">
+    <%= f.label :schoolt_id %><br>
+    <%= f.number_field :schoolt_id %>
+  </div>
+  <div class="field">
+    <%= f.label :address %><br>
+    <%= f.text_field :address %>
+  </div>
+  <div class="field">
+    <%= f.label :email %><br>
+    <%= f.text_field :email %>
+  </div>
+  <div class="field">
+    <%= f.label :fb %><br>
+    <%= f.text_field :fb %>
+  </div>
+  <div class="field">
+    <%= f.label :cellphone %><br>
+    <%= f.text_field :cellphone %>
+  </div>
+  <div class="field">
+    <%= f.label :urgentn %><br>
+    <%= f.text_field :urgentn %>
+  </div>
+  <div class="field">
+    <%= f.label :urgentr %><br>
+    <%= f.text_field :urgentr %>
+  </div>
+  <div class="field">
+    <%= f.label :urgentc %><br>
+    <%= f.text_field :urgentc %>
+  </div>
+  <div class="field">
+    <%= f.label :specialeat %><br>
+    <%= f.text_field :specialeat %>
+  </div>
+  <div class="field">
+    <%= f.label :specialsick %><br>
+    <%= f.text_field :specialsick %>
+  </div>
+  <div class="field">
+    <%= f.label :vegetrian_id %><br>
+    <%= f.number_field :vegetrian_id %>
+  </div>
+  <div class="field">
+    <%= f.label :tshirtsize_id %><br>
+    <%= f.number_field :tshirtsize_id %>
+  </div>
+  <div class="field">
+    <%= f.label :intro %><br>
+    <%= f.text_field :intro %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

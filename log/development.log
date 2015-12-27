@@ -1,0 +1,55 @@
+  [1m[36m (9.1ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (1.2ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to CreatePrivateData (20151227060027)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  CREATE TABLE "private_data" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "nickname" varchar, "gender_id" integer, "birthy_id" integer, "birthm_id" integer, "birthd_id" integer, "personcard" varchar, "blood_id" integer, "school" varchar, "schoolg_id" integer, "schoolc" varchar, "schoolt_id" integer, "address" varchar, "email" varchar, "fb" varchar, "cellphone" varchar, "urgentn" varchar, "urgentr" varchar, "urgentc" varchar, "specialeat" varchar, "specialsick" varchar, "vegetrian_id" integer, "tshirtsize_id" integer, "intro" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20151227060027"]]
+  [1m[35m (0.9ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/" for 127.0.0.1 at 2015-12-27 14:01:00 +0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/railties-4.2.5/lib/rails/templates/rails/welcome/index.html.erb (2.2ms)
+Completed 200 OK in 22ms (Views: 12.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/private_data" for 127.0.0.1 at 2015-12-27 14:01:12 +0800
+Processing by PrivateDataController#index as HTML
+  [1m[35mPrivateDatum Load (0.2ms)[0m  SELECT "private_data".* FROM "private_data"
+  Rendered private_data/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 1702ms (Views: 1699.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/private_data.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-12-27 14:01:14 +0800
+
+
+Started GET "/assets/scaffolds.self-343df791bb17b8f9283a055e6ac4b6d50d99af13f2705b6cbfa7e696837055e4.css?body=1" for 127.0.0.1 at 2015-12-27 14:01:14 +0800
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-12-27 14:01:14 +0800
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-12-27 14:01:14 +0800
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-12-27 14:01:14 +0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-12-27 14:01:14 +0800
+
+
+Started GET "/assets/private_data.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-27 14:01:14 +0800
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-12-27 14:01:14 +0800
+
+
+Started GET "/private_data/new" for 127.0.0.1 at 2015-12-27 14:01:29 +0800
+Processing by PrivateDataController#new as HTML
+  Rendered private_data/_form.html.erb (36.0ms)
+  Rendered private_data/new.html.erb within layouts/application (51.1ms)
+Completed 200 OK in 101ms (Views: 71.6ms | ActiveRecord: 0.3ms)
