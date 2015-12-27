@@ -1,9 +1,8 @@
 # NTHU Summer Camp Register System 2016
 2016 Summer Camp Register System
 
-Contact:
-<br> facebook.com/yesray0216
-<br> yesray0216@gmail.com
+# Contact:
+<br> <p> facebook.com/yesray0216</p>
+<br> <p> yesray0216@gmail.com</p>
 <br> 
-<br> facebook.com/tienchi.yang
-
+<br> <p> facebook.com/tienchi.yang</p>
