@@ -14,7 +14,7 @@ class PrivateDataController < ApplicationController
 
   # GET /private_data/new
   def new
-    @private_datum = PrivateDatum.new
+    @private_datum = current_user.private_data.build
   end
 
   # GET /private_data/1/edit
@@ -24,7 +24,7 @@ class PrivateDataController < ApplicationController
   # POST /private_data
   # POST /private_data.json
   def create
-    @private_datum = PrivateDatum.new(private_datum_params)
+    @private_datum = current_user.private_data.build(private_datum_params)
 
     respond_to do |format|
       if @private_datum.save

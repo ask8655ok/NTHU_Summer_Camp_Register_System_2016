@@ -1,13 +1,25 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>NTHUSummerCampRegisterSystem2016</title>
+  <title>2016清大暑期營隊報名系統</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
 
+	<% if user_signed_in? %>
+		<ul>
+			<li><%= link_to '新增報名', new_private_datum_path %></li>
+			<li><%= link_to '設定帳號', edit_user_registration_path %></li>
+			<li><%= link_to '登出系統', destroy_user_session_path, :method => :delete %></li>
+		</ul>
+	<% else %>
+		<ul>
+			<li><%= link_to '註冊系統', new_user_registration_path %></li>
+			<li><%= link_to '登入系統', new_user_session_path %></li>
+		</ul>
+	<% end %>
 <%= yield %>
 
 </body>
