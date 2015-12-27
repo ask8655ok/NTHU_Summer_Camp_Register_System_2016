@@ -12,102 +12,95 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :name %><br>
+    <%= f.label "姓名" %>
     <%= f.text_field :name %>
   </div>
   <div class="field">
-    <%= f.label :nickname %><br>
+    <%= f.label "綽號" %>
     <%= f.text_field :nickname %>
   </div>
   <div class="field">
-    <%= f.label :gender_id %><br>
+    <%= f.label "性別" %>
     <%= f.select :gender_id, options_from_collection_for_select(Gender.all, :id, :name, @private_datum.gender_id) %>
   </div>
   <div class="field">
-    <%= f.label :birthy_id %><br>
+    <%= f.label "生日" %>
     <%= f.select :birthy_id, options_from_collection_for_select(Birthy.all, :id, :name, @private_datum.gender_id) %>
-  </div>
-  <div class="field">
-    <%= f.label :birthm_id %><br>
+
+    <%= f.label "/" %>
     <%= f.select :birthm_id, options_from_collection_for_select(Birthm.all, :id, :name, @private_datum.gender_id) %>
-  </div>
-  <div class="field">
-    <%= f.label :birthd_id %><br>
+
+    <%= f.label "/" %>
     <%= f.select :birthd_id, options_from_collection_for_select(Birthd.all, :id, :name, @private_datum.gender_id) %>
   </div>
   <div class="field">
-    <%= f.label :personcard %><br>
+    <%= f.label "身分證字號" %>
     <%= f.text_field :personcard %>
   </div>
   <div class="field">
-    <%= f.label :blood_id %><br>
+    <%= f.label "血型" %>
     <%= f.select :blood_id, options_from_collection_for_select(Blood.all, :id, :name, @private_datum.gender_id) %>
   </div>
   <div class="field">
-    <%= f.label :school %><br>
+    <%= f.label "學校" %>
     <%= f.text_field :school %>
-  </div>
-  <div class="field">
-    <%= f.label :schoolg_id %><br>
+
     <%= f.select :schoolg_id, options_from_collection_for_select(Schoolg.all, :id, :name, @private_datum.gender_id) %>
-  </div>
-  <div class="field">
-    <%= f.label :schoolc %><br>
+
     <%= f.text_field :schoolc %>
-  </div>
-  <div class="field">
-    <%= f.label :schoolt_id %><br>
+
+    <%= f.label "班" %>
     <%= f.select :schoolt_id, options_from_collection_for_select(Schoolt.all, :id, :name, @private_datum.gender_id) %>
   </div>
   <div class="field">
-    <%= f.label :address %><br>
+    <%= f.label "聯絡地址" %>
     <%= f.text_field :address %>
   </div>
   <div class="field">
-    <%= f.label :email %><br>
+    <%= f.label "E-mail" %>
     <%= f.text_field :email %>
   </div>
   <div class="field">
-    <%= f.label :fb %><br>
+    <%= f.label "Facebook" %>
     <%= f.text_field :fb %>
   </div>
   <div class="field">
-    <%= f.label :cellphone %><br>
+    <%= f.label "聯絡手機" %>
     <%= f.text_field :cellphone %>
   </div>
   <div class="field">
-    <%= f.label :urgentn %><br>
+    <%= f.label "緊急聯絡人姓名" %>
     <%= f.text_field :urgentn %>
   </div>
   <div class="field">
-    <%= f.label :urgentr %><br>
+    <%= f.label "緊急聯絡人關係" %>
     <%= f.text_field :urgentr %>
   </div>
   <div class="field">
-    <%= f.label :urgentc %><br>
+    <%= f.label "緊急聯絡人手機" %>
     <%= f.text_field :urgentc %>
   </div>
   <div class="field">
-    <%= f.label :specialeat %><br>
+    <%= f.label "特殊飲食習慣" %>
     <%= f.text_field :specialeat %>
   </div>
   <div class="field">
-    <%= f.label :specialsick %><br>
+    <%= f.label "特殊疾病" %>
     <%= f.text_field :specialsick %>
   </div>
   <div class="field">
-    <%= f.label :vegetrian_id %><br>
+    <%= f.label "吃素" %>
     <%= f.select :vegetrian_id, options_from_collection_for_select(Vegetrian.all, :id, :name, @private_datum.gender_id) %>
   </div>
   <div class="field">
-    <%= f.label :tshirtsize_id %><br>
+    <%= f.label "T恤大小" %>
     <%= f.select :tshirtsize_id, options_from_collection_for_select(Tshirtsize.all, :id, :name, @private_datum.gender_id) %>
   </div>
   <div class="field">
-    <%= f.label :intro %><br>
+    <%= f.label "自我介紹" %><br>
     <%= f.text_field :intro %>
   </div>
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit "儲存送出" %>
   </div>
 <% end %>

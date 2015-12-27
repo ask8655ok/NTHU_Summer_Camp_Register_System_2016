@@ -1,124 +1,99 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Name:</strong>
+  <strong>姓名:</strong>
   <%= @private_datum.name %>
 </p>
 
 <p>
-  <strong>Nickname:</strong>
+  <strong>綽號:</strong>
   <%= @private_datum.nickname %>
 </p>
 
 <p>
-  <strong>Gender:</strong>
-  <%= @private_datum.gender_id %>
+  <strong>性別:</strong>
+  <%= Gender.find(@private_datum.gender_id).name %>
 </p>
 
 <p>
-  <strong>Birthy:</strong>
-  <%= @private_datum.birthy_id %>
+  <strong>生日:</strong>
+  <%= Birthy.find(@private_datum.birthy_id).name+"/"+Birthm.find(@private_datum.birthm_id).name+"/"+Birthd.find(@private_datum.birthd_id).name %>
 </p>
 
 <p>
-  <strong>Birthm:</strong>
-  <%= @private_datum.birthm_id %>
-</p>
-
-<p>
-  <strong>Birthd:</strong>
-  <%= @private_datum.birthd_id %>
-</p>
-
-<p>
-  <strong>Personcard:</strong>
+  <strong>身分證字號:</strong>
   <%= @private_datum.personcard %>
 </p>
 
 <p>
-  <strong>Blood:</strong>
-  <%= @private_datum.blood_id %>
+  <strong>血型:</strong>
+  <%= Blood.find(@private_datum.blood_id).name+"型" %>
 </p>
 
 <p>
-  <strong>School:</strong>
-  <%= @private_datum.school %>
+  <strong>學校:</strong>
+  <%= @private_datum.school+" "+Schoolg.find(@private_datum.schoolg_id).name+" "+@private_datum.schoolc+"班 "+Schoolt.find(@private_datum.schoolt_id).name %>
 </p>
 
 <p>
-  <strong>Schoolg:</strong>
-  <%= @private_datum.schoolg_id %>
-</p>
-
-<p>
-  <strong>Schoolc:</strong>
-  <%= @private_datum.schoolc %>
-</p>
-
-<p>
-  <strong>Schoolt:</strong>
-  <%= @private_datum.schoolt_id %>
-</p>
-
-<p>
-  <strong>Address:</strong>
+  <strong>聯絡地址:</strong>
   <%= @private_datum.address %>
 </p>
 
 <p>
-  <strong>Email:</strong>
+  <strong>E-mail:</strong>
   <%= @private_datum.email %>
 </p>
 
 <p>
-  <strong>Fb:</strong>
+  <strong>Facebook:</strong>
   <%= @private_datum.fb %>
 </p>
 
 <p>
-  <strong>Cellphone:</strong>
+  <strong>聯絡手機:</strong>
   <%= @private_datum.cellphone %>
 </p>
 
 <p>
-  <strong>Urgentn:</strong>
+  <strong>緊急聯絡人姓名:</strong>
   <%= @private_datum.urgentn %>
 </p>
 
 <p>
-  <strong>Urgentr:</strong>
+  <strong>緊急聯絡人關係:</strong>
   <%= @private_datum.urgentr %>
 </p>
 
 <p>
-  <strong>Urgentc:</strong>
+  <strong>緊急聯絡人手機:</strong>
   <%= @private_datum.urgentc %>
 </p>
 
 <p>
-  <strong>Specialeat:</strong>
+  <strong>特殊飲食習慣:</strong>
   <%= @private_datum.specialeat %>
 </p>
 
 <p>
-  <strong>Specialsick:</strong>
+  <strong>特殊疾病:</strong>
   <%= @private_datum.specialsick %>
 </p>
 
 <p>
-  <strong>Vegetrian:</strong>
-  <%= @private_datum.vegetrian_id %>
+  <strong>吃素:</strong>
+  <%= Vegetrian.find(@private_datum.vegetrian_id).name %>
 </p>
 
 <p>
-  <strong>Tshirtsize:</strong>
-  <%= @private_datum.tshirtsize_id %>
+  <strong>T恤大小:</strong>
+  <%= Tshirtsize.find(@private_datum.tshirtsize_id).name %>
 </p>
 
 <p>
-  <strong>Intro:</strong>
+  <strong>自我介紹:</strong>
   <%= @private_datum.intro %>
 </p>
 
-<%= link_to 'Edit', edit_private_datum_path(@private_datum) %> |
-<%= link_to 'Back', private_data_path %>
+<%= link_to '編輯', edit_private_datum_path(@private_datum) %> |
+<%= link_to '上一頁', private_data_path %>
