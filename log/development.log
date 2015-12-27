@@ -650,3 +650,64 @@ Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bd
 
 
 Started GET "/assets/private_data.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-27 14:58:14 +0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateVegetrians (20151227070152)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (1.0ms)[0m  [1mCREATE TABLE "vegetrians" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20151227070152"]]
+  [1m[36m (8.9ms)[0m  [1mcommit transaction[0m
+Migrating to CreateTshirtsizes (20151227070204)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.4ms)[0m  [1mCREATE TABLE "tshirtsizes" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20151227070204"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.4ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "vegetrians" ("name", "created_at", "updated_at") VALUES (?, ?, ?)  [["name", "是"], ["created_at", "2015-12-27 07:04:48.614652"], ["updated_at", "2015-12-27 07:04:48.614652"]]
+  [1m[36m (8.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "vegetrians" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "否"], ["created_at", "2015-12-27 07:04:53.367931"], ["updated_at", "2015-12-27 07:04:53.367931"]]
+  [1m[35m (8.8ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "tshirtsizes" ("name", "created_at", "updated_at") VALUES (?, ?, ?)  [["name", "S"], ["created_at", "2015-12-27 07:05:26.773153"], ["updated_at", "2015-12-27 07:05:26.773153"]]
+  [1m[36m (9.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "tshirtsizes" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "M"], ["created_at", "2015-12-27 07:05:29.259199"], ["updated_at", "2015-12-27 07:05:29.259199"]]
+  [1m[35m (8.2ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "tshirtsizes" ("name", "created_at", "updated_at") VALUES (?, ?, ?)  [["name", "L"], ["created_at", "2015-12-27 07:05:32.113600"], ["updated_at", "2015-12-27 07:05:32.113600"]]
+  [1m[36m (8.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "tshirtsizes" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "XL"], ["created_at", "2015-12-27 07:05:35.163109"], ["updated_at", "2015-12-27 07:05:35.163109"]]
+  [1m[35m (8.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "tshirtsizes" ("name", "created_at", "updated_at") VALUES (?, ?, ?)  [["name", "2XL"], ["created_at", "2015-12-27 07:05:38.971571"], ["updated_at", "2015-12-27 07:05:38.971571"]]
+  [1m[36m (8.7ms)[0m  [1mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+
+Started GET "/private_data" for 127.0.0.1 at 2015-12-27 15:08:32 +0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PrivateDataController#index as HTML
+  [1m[35mPrivateDatum Load (1.0ms)[0m  SELECT "private_data".* FROM "private_data"
+  Rendered private_data/index.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 253ms (Views: 236.9ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/private_data/new" for 127.0.0.1 at 2015-12-27 15:08:34 +0800
+Processing by PrivateDataController#new as HTML
+  [1m[36mGender Load (0.2ms)[0m  [1mSELECT "genders".* FROM "genders"[0m
+  [1m[35mBirthy Load (0.1ms)[0m  SELECT "birthies".* FROM "birthies"
+  [1m[36mBirthm Load (0.1ms)[0m  [1mSELECT "birthms".* FROM "birthms"[0m
+  [1m[35mBirthd Load (0.2ms)[0m  SELECT "birthds".* FROM "birthds"
+  [1m[36mBlood Load (0.2ms)[0m  [1mSELECT "bloods".* FROM "bloods"[0m
+  [1m[35mSchoolg Load (0.2ms)[0m  SELECT "schoolgs".* FROM "schoolgs"
+  [1m[36mSchoolt Load (0.3ms)[0m  [1mSELECT "schoolts".* FROM "schoolts"[0m
+  [1m[35mVegetrian Load (0.2ms)[0m  SELECT "vegetrians".* FROM "vegetrians"
+  [1m[36mTshirtsize Load (0.2ms)[0m  [1mSELECT "tshirtsizes".* FROM "tshirtsizes"[0m
+  Rendered private_data/_form.html.erb (114.3ms)
+  Rendered private_data/new.html.erb within layouts/application (117.8ms)
+Completed 200 OK in 147ms (Views: 129.4ms | ActiveRecord: 3.7ms)

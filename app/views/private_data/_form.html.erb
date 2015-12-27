@@ -97,11 +97,11 @@
   </div>
   <div class="field">
     <%= f.label :vegetrian_id %><br>
-    <%= f.number_field :vegetrian_id %>
+    <%= f.select :vegetrian_id, options_from_collection_for_select(Vegetrian.all, :id, :name, @private_datum.gender_id) %>
   </div>
   <div class="field">
     <%= f.label :tshirtsize_id %><br>
-    <%= f.number_field :tshirtsize_id %>
+    <%= f.select :tshirtsize_id, options_from_collection_for_select(Tshirtsize.all, :id, :name, @private_datum.gender_id) %>
   </div>
   <div class="field">
     <%= f.label :intro %><br>

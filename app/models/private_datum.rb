@@ -6,4 +6,6 @@ class PrivateDatum < ActiveRecord::Base
 	belongs_to :blood
 	belongs_to :schoolg
 	belongs_to :schoolt
+	belongs_to :vegetrian
+	belongs_to :tshirtsize
 end
