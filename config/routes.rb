@@ -1,5 +1,8 @@
 Rails.application.routes.draw do
+  devise_for :users
   resources :private_data
+  root to: "private_data#index"
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
