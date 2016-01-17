@@ -4,12 +4,12 @@
   <%= devise_error_messages! %>
 
   <div class="field">
-    <%= f.label :email %><br />
+    <%= f.label "帳號信箱" %><br />
     <%= f.email_field :email, autofocus: true %>
   </div>
 
   <div class="actions">
-    <%= f.submit "Resend unlock instructions" %>
+    <%= f.submit "重傳解鎖信" %>
   </div>
 <% end %>
 
