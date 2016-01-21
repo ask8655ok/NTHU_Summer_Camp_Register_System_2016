@@ -1,4 +1,4 @@
-<h2>登入</h2>
+<h2>註冊系統</h2>
 
 <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
   <%= devise_error_messages! %>
@@ -11,7 +11,7 @@
   <div class="field">
     <%= f.label "密碼" %>
     <% if @minimum_password_length %>
-    <em>(<%= @minimum_password_length %> characters minimum)</em>
+    <em>(至少<%= @minimum_password_length %>個字)</em>
     <% end %><br />
     <%= f.password_field :password, autocomplete: "off" %>
   </div>
