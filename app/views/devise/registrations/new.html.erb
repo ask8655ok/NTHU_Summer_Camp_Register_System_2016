@@ -5,7 +5,7 @@
 
   <div class="field">
     <%= f.label "帳號信箱" %><br />
-    <%= f.email_field :email, autofocus: true %>
+    <%= f.email_field :email, autofocus: true, :size=>25 %>
   </div>
 
   <div class="field">
@@ -20,9 +20,9 @@
     <%= f.label "驗證密碼" %><br />
     <%= f.password_field :password_confirmation, autocomplete: "off" %>
   </div>
-
+  <br>
   <div class="actions">
-    <%= f.submit "登入" %>
+    <%= f.submit "登入", class: "btn btn-primary" %>
   </div>
 <% end %>
 
