@@ -1,5 +1,6 @@
 <table class="table table-hover">
 <tbody>
+<p>基本資料</p>
 <tr>
   <th>姓名</th>
   <th><%= @private_datum.name %></th>
@@ -29,8 +30,11 @@
   <th><%= @private_datum.school+" "+Schoolg.find(@private_datum.schoolg_id).name+" "+@private_datum.schoolc+"班 "+Schoolt.find(@private_datum.schoolt_id).name %></th>
 </tr>
 </tbody>
+</table>
 
+<table class="table table-hover">
 <tbody>
+<p>聯絡資料</p>
 <tr>
   <th>聯絡地址</th>
   <th><%= @private_datum.address %></th>
@@ -48,8 +52,11 @@
   <th><%= @private_datum.cellphone %></th>
 </tr>
 </tbody>
+</table>
 
+<table class="table table-hover">
 <tbody>
+<p>緊急聯絡人</p>
 <tr>
   <th>緊急聯絡人姓名</th>
   <th><%= @private_datum.urgentn %></th>
@@ -63,8 +70,11 @@
   <th><%= @private_datum.urgentc %></th>
 </tr>
 </tbody>
+</table>
 
+<table class="table table-hover">
 <tbody>
+<p>自我介紹</p>
 <tr>
   <th>特殊飲食習慣</th>
   <th><%= @private_datum.specialeat %></th>
