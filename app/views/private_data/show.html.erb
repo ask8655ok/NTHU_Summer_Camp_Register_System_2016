@@ -95,9 +95,23 @@
   <th>自我介紹</th>
   <th><%= @private_datum.intro %></th>
 </tr>
+</tbody>
+</table>
+
+<table class="table table-hover">
+<tbody>
+<p>選秀順位</p>
 <tr>
   <th>第一順位</th>
   <th><%= @private_datum.fpick %></th>
+</tr>
+<tr>
+  <th>第二順位</th>
+  <th><%= @private_datum.spick %></th>
+</tr>
+<tr>
+  <th>第三順位</th>
+  <th><%= @private_datum.tpick %></th>
 </tr>
 </tbody>
 </table>

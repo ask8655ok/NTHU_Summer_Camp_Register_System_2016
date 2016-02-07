@@ -70,6 +70,6 @@ class PrivateDataController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def private_datum_params
-      params.require(:private_datum).permit(:name, :nickname, :gender_id, :birthy_id, :birthm_id, :birthd_id, :personcard, :blood_id, :school, :schoolg_id, :schoolc, :schoolt_id, :address, :email, :fb, :cellphone, :urgentn, :urgentr, :urgentc, :specialeat, :specialsick, :vegetrian_id, :tshirtsize_id, :intro, :fpick)
+      params.require(:private_datum).permit(:name, :nickname, :gender_id, :birthy_id, :birthm_id, :birthd_id, :personcard, :blood_id, :school, :schoolg_id, :schoolc, :schoolt_id, :address, :email, :fb, :cellphone, :urgentn, :urgentr, :urgentc, :specialeat, :specialsick, :vegetrian_id, :tshirtsize_id, :intro, :fpick, :spick, :tpick)
     end
 end
