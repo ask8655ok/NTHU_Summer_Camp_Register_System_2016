@@ -103,15 +103,15 @@
 <p>選秀順位</p>
 <tr>
   <th>第一順位</th>
-  <th><%= @private_datum.fpick %></th>
+  <th><%= Camp.find(@private_datum.fpick).name %></th>
 </tr>
 <tr>
   <th>第二順位</th>
-  <th><%= @private_datum.spick %></th>
+  <th><%= Camp.find(@private_datum.spick).name %></th>
 </tr>
 <tr>
   <th>第三順位</th>
-  <th><%= @private_datum.tpick %></th>
+  <th><%= Camp.find(@private_datum.tpick).name %></th>
 </tr>
 </tbody>
 </table>

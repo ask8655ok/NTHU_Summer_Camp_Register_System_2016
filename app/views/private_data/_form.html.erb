@@ -27,13 +27,13 @@
   </tr>
   <tr>
     <th><%= f.label "生日" %>
-    <th><%= f.select :birthy_id, options_from_collection_for_select(Birthy.all, :id, :name, @private_datum.gender_id) %>
+    <th><%= f.select :birthy_id, options_from_collection_for_select(Birthy.all, :id, :name, @private_datum.birthy_id) %>
 
     <%= f.label "/" %>
-    <%= f.select :birthm_id, options_from_collection_for_select(Birthm.all, :id, :name, @private_datum.gender_id) %>
+    <%= f.select :birthm_id, options_from_collection_for_select(Birthm.all, :id, :name, @private_datum.birthm_id) %>
 
     <%= f.label "/" %>
-    <%= f.select :birthd_id, options_from_collection_for_select(Birthd.all, :id, :name, @private_datum.gender_id) %></th>
+    <%= f.select :birthd_id, options_from_collection_for_select(Birthd.all, :id, :name, @private_datum.birthd_id) %></th>
   </tr>
   <tr>
     <th><%= f.label "身分證字號" %>
@@ -41,15 +41,15 @@
   </tr>
   <tr>
     <th><%= f.label "血型" %>
-    <th><%= f.select :blood_id, options_from_collection_for_select(Blood.all, :id, :name, @private_datum.gender_id) %></th>
+    <th><%= f.select :blood_id, options_from_collection_for_select(Blood.all, :id, :name, @private_datum.blood_id) %></th>
   </tr>
   <tr>
     <th><%= f.label "學校" %>
     <th><%= f.text_field(:school, size:14) %>
-    <%= f.select :schoolg_id, options_from_collection_for_select(Schoolg.all, :id, :name, @private_datum.gender_id) %>
+    <%= f.select :schoolg_id, options_from_collection_for_select(Schoolg.all, :id, :name, @private_datum.schoolg_id) %>
     <%= f.text_field(:schoolc, size: 2) %>
     <%= f.label "班" %>
-    <%= f.select :schoolt_id, options_from_collection_for_select(Schoolt.all, :id, :name, @private_datum.gender_id) %></th>
+    <%= f.select :schoolt_id, options_from_collection_for_select(Schoolt.all, :id, :name, @private_datum.schoolt_id) %></th>
   </tr>
   </tbody>
 
@@ -95,11 +95,11 @@
   </tr>
   <tr>
     <th><%= f.label "吃素" %></th>
-    <th><%= f.select :vegetrian_id, options_from_collection_for_select(Vegetrian.all, :id, :name, @private_datum.gender_id) %></th>
+    <th><%= f.select :vegetrian_id, options_from_collection_for_select(Vegetrian.all, :id, :name, @private_datum.vegetrian_id) %></th>
   </tr>
   <tr>
     <th><%= f.label "T恤大小" %></th>
-    <th><%= f.select :tshirtsize_id, options_from_collection_for_select(Tshirtsize.all, :id, :name, @private_datum.gender_id) %></th>
+    <th><%= f.select :tshirtsize_id, options_from_collection_for_select(Tshirtsize.all, :id, :name, @private_datum.tshirtsize_id) %></th>
   </tr>
   <tr>
     <th><%= f.label "自我介紹" %></th>
@@ -110,15 +110,15 @@
   <tbody>
     <tr>
       <th><%= f.label "第一順位" %></th>
-      <th><%= f.number_field(:fpick) %></th>
+      <th><%= f.select :fpick, options_from_collection_for_select(Camp.all, :id, :name, @private_datum.fpick) %></th>
     </tr>
     <tr>
       <th><%= f.label "第二順位" %></th>
-      <th><%= f.number_field(:spick) %></th>
+      <th><%= f.select :spick, options_from_collection_for_select(Camp.all, :id, :name, @private_datum.spick) %></th>
     </tr>
     <tr>
       <th><%= f.label "第三順位" %></th>
-      <th><%= f.number_field(:tpick) %></th>
+      <th><%= f.select :tpick, options_from_collection_for_select(Camp.all, :id, :name, @private_datum.tpick) %></th>
     </tr>
   </tbody>
 </table>
