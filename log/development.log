@@ -41283,3 +41283,694 @@ Processing by Devise::SessionsController#new as HTML
   Rendered devise/shared/_links.html.erb (2.7ms)
   Rendered devise/sessions/new.html.erb within layouts/application (8.4ms)
 Completed 200 OK in 66ms (Views: 64.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-07 15:20:01 +0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PrivateDataController#index as HTML
+  Rendered private_data/index.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 408ms (Views: 384.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-07 15:20:03 +0800
+Processing by PrivateDataController#index as HTML
+  Rendered private_data/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 85ms (Views: 84.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2016-02-07 15:20:04 +0800
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (5.6ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (39.9ms)
+Completed 200 OK in 149ms (Views: 134.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-07 15:20:05 +0800
+Processing by PrivateDataController#index as HTML
+  Rendered private_data/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 81ms (Views: 80.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2016-02-07 15:20:06 +0800
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (2.3ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (7.1ms)
+Completed 200 OK in 70ms (Views: 69.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-07 15:20:07 +0800
+Processing by PrivateDataController#index as HTML
+  Rendered private_data/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 48ms (Views: 47.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2016-02-07 15:20:10 +0800
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (5.9ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (16.5ms)
+Completed 200 OK in 73ms (Views: 70.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-07 15:20:11 +0800
+Processing by PrivateDataController#index as HTML
+  Rendered private_data/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 66ms (Views: 64.9ms | ActiveRecord: 0.0ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddFpickToPrivateData (20160207072140)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (1.2ms)[0m  [1mALTER TABLE "private_data" ADD "fpick" integer[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20160207072140"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.2ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+[0m
+  [1m[35m (0.5ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-07 15:24:36 +0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PrivateDataController#index as HTML
+  Rendered private_data/index.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 390ms (Views: 371.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2016-02-07 15:24:38 +0800
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (4.7ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (42.1ms)
+Completed 200 OK in 137ms (Views: 126.6ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2016-02-07 15:24:39 +0800
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"xDmJRZB+BFA0m5kQ5tqzAnq/5YPHBB8avfu3e3lsnHdBDl8bMOKW1IBnWRdgQsxWjJiHtvriktI7wnydA0OSlQ==", "user"=>{"email"=>"yesray0216@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"登入"}
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "yesray0216@gmail.com"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  UPDATE "users" SET "last_sign_in_at" = ?, "current_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?  [["last_sign_in_at", "2016-02-06 15:08:45.928175"], ["current_sign_in_at", "2016-02-07 07:24:39.388420"], ["sign_in_count", 19], ["updated_at", "2016-02-07 07:24:39.389337"], ["id", 4]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 117ms (ActiveRecord: 1.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-07 15:24:39 +0800
+Processing by PrivateDataController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 4]]
+  [1m[36mPrivateDatum Load (0.6ms)[0m  [1mSELECT "private_data".* FROM "private_data"[0m
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered private_data/index.html.erb within layouts/application (56.8ms)
+Completed 200 OK in 135ms (Views: 132.8ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/private_data/new" for 127.0.0.1 at 2016-02-07 15:24:40 +0800
+Processing by PrivateDataController#new as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 4]]
+  [1m[36mGender Load (0.5ms)[0m  [1mSELECT "genders".* FROM "genders"[0m
+  [1m[35mBirthy Load (0.6ms)[0m  SELECT "birthies".* FROM "birthies"
+  [1m[36mBirthm Load (0.2ms)[0m  [1mSELECT "birthms".* FROM "birthms"[0m
+  [1m[35mBirthd Load (0.3ms)[0m  SELECT "birthds".* FROM "birthds"
+  [1m[36mBlood Load (0.1ms)[0m  [1mSELECT "bloods".* FROM "bloods"[0m
+  [1m[35mSchoolg Load (0.2ms)[0m  SELECT "schoolgs".* FROM "schoolgs"
+  [1m[36mSchoolt Load (0.2ms)[0m  [1mSELECT "schoolts".* FROM "schoolts"[0m
+  [1m[35mVegetrian Load (0.2ms)[0m  SELECT "vegetrians".* FROM "vegetrians"
+  [1m[36mTshirtsize Load (0.2ms)[0m  [1mSELECT "tshirtsizes".* FROM "tshirtsizes"[0m
+  Rendered private_data/_form.html.erb (91.7ms)
+  Rendered private_data/new.html.erb within layouts/application (93.9ms)
+Completed 200 OK in 158ms (Views: 141.6ms | ActiveRecord: 4.9ms)
+
+
+Started GET "/private_data/9" for 127.0.0.1 at 2016-02-07 15:24:47 +0800
+Processing by PrivateDataController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[35mPrivateDatum Load (0.2ms)[0m  SELECT  "private_data".* FROM "private_data" WHERE "private_data"."id" = ? LIMIT 1  [["id", 9]]
+  [1m[36mGender Load (0.1ms)[0m  [1mSELECT  "genders".* FROM "genders" WHERE "genders"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mBirthy Load (0.1ms)[0m  SELECT  "birthies".* FROM "birthies" WHERE "birthies"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mBirthm Load (0.2ms)[0m  [1mSELECT  "birthms".* FROM "birthms" WHERE "birthms"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mBirthd Load (0.1ms)[0m  SELECT  "birthds".* FROM "birthds" WHERE "birthds"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mBlood Load (0.1ms)[0m  [1mSELECT  "bloods".* FROM "bloods" WHERE "bloods"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mSchoolg Load (0.1ms)[0m  SELECT  "schoolgs".* FROM "schoolgs" WHERE "schoolgs"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mSchoolt Load (0.1ms)[0m  [1mSELECT  "schoolts".* FROM "schoolts" WHERE "schoolts"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mVegetrian Load (0.1ms)[0m  SELECT  "vegetrians".* FROM "vegetrians" WHERE "vegetrians"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mTshirtsize Load (0.1ms)[0m  [1mSELECT  "tshirtsizes".* FROM "tshirtsizes" WHERE "tshirtsizes"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered private_data/show.html.erb within layouts/application (8.4ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 4]]
+Completed 200 OK in 60ms (Views: 57.2ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/private_data/9/edit" for 127.0.0.1 at 2016-02-07 15:24:48 +0800
+Processing by PrivateDataController#edit as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mPrivateDatum Load (0.1ms)[0m  [1mSELECT  "private_data".* FROM "private_data" WHERE "private_data"."id" = ? LIMIT 1[0m  [["id", 9]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 4]]
+  [1m[36mGender Load (0.1ms)[0m  [1mSELECT "genders".* FROM "genders"[0m
+  [1m[35mBirthy Load (0.1ms)[0m  SELECT "birthies".* FROM "birthies"
+  [1m[36mBirthm Load (0.2ms)[0m  [1mSELECT "birthms".* FROM "birthms"[0m
+  [1m[35mBirthd Load (0.2ms)[0m  SELECT "birthds".* FROM "birthds"
+  [1m[36mBlood Load (0.2ms)[0m  [1mSELECT "bloods".* FROM "bloods"[0m
+  [1m[35mSchoolg Load (0.1ms)[0m  SELECT "schoolgs".* FROM "schoolgs"
+  [1m[36mSchoolt Load (0.1ms)[0m  [1mSELECT "schoolts".* FROM "schoolts"[0m
+  [1m[35mVegetrian Load (0.1ms)[0m  SELECT "vegetrians".* FROM "vegetrians"
+  [1m[36mTshirtsize Load (0.1ms)[0m  [1mSELECT "tshirtsizes".* FROM "tshirtsizes"[0m
+  Rendered private_data/_form.html.erb (18.1ms)
+  Rendered private_data/edit.html.erb within layouts/application (19.7ms)
+Completed 200 OK in 84ms (Views: 80.6ms | ActiveRecord: 1.5ms)
+
+
+Started PATCH "/private_data/9" for 127.0.0.1 at 2016-02-07 15:24:50 +0800
+Processing by PrivateDataController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"5GFvfE6e2xzZbc3/WoGTDaWPq3d0ClmCuC+uTm0q3NCUWc3kLKsCGK8Qs+RG0uxr6/qebdS9AaTtyTUc5YwsZw==", "private_datum"=>{"name"=>"傅子睿", "nickname"=>"睿睿", "gender_id"=>"1", "birthy_id"=>"1", "birthm_id"=>"1", "birthd_id"=>"1", "personcard"=>"A127518717", "blood_id"=>"1", "school"=>"建國中學", "schoolg_id"=>"1", "schoolc"=>"13", "schoolt_id"=>"1", "address"=>"文山區", "email"=>"yesray0216@gmail.com", "fb"=>"facebook.com.tw/yesray0216", "cellphone"=>"0970850216", "urgentn"=>"林美芳", "urgentr"=>"母子", "urgentc"=>"0918358021", "specialeat"=>"無", "specialsick"=>"無", "vegetrian_id"=>"1", "tshirtsize_id"=>"1", "intro"=>"帥ㄍ", "fpick"=>"1"}, "commit"=>"儲存送出", "id"=>"9"}
+  [1m[35mPrivateDatum Load (0.2ms)[0m  SELECT  "private_data".* FROM "private_data" WHERE "private_data"."id" = ? LIMIT 1  [["id", 9]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 4]]
+Unpermitted parameter: fpick
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+Redirected to http://127.0.0.1:3000/private_data/9
+Completed 302 Found in 9ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/private_data/9" for 127.0.0.1 at 2016-02-07 15:24:50 +0800
+Processing by PrivateDataController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[35mPrivateDatum Load (0.1ms)[0m  SELECT  "private_data".* FROM "private_data" WHERE "private_data"."id" = ? LIMIT 1  [["id", 9]]
+  [1m[36mGender Load (0.1ms)[0m  [1mSELECT  "genders".* FROM "genders" WHERE "genders"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mBirthy Load (0.1ms)[0m  SELECT  "birthies".* FROM "birthies" WHERE "birthies"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mBirthm Load (0.1ms)[0m  [1mSELECT  "birthms".* FROM "birthms" WHERE "birthms"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mBirthd Load (0.1ms)[0m  SELECT  "birthds".* FROM "birthds" WHERE "birthds"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mBlood Load (0.1ms)[0m  [1mSELECT  "bloods".* FROM "bloods" WHERE "bloods"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mSchoolg Load (0.1ms)[0m  SELECT  "schoolgs".* FROM "schoolgs" WHERE "schoolgs"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mSchoolt Load (0.1ms)[0m  [1mSELECT  "schoolts".* FROM "schoolts" WHERE "schoolts"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mVegetrian Load (0.1ms)[0m  SELECT  "vegetrians".* FROM "vegetrians" WHERE "vegetrians"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mTshirtsize Load (0.1ms)[0m  [1mSELECT  "tshirtsizes".* FROM "tshirtsizes" WHERE "tshirtsizes"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered private_data/show.html.erb within layouts/application (6.3ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 4]]
+Completed 200 OK in 70ms (Views: 68.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/private_data/9/edit" for 127.0.0.1 at 2016-02-07 15:24:52 +0800
+Processing by PrivateDataController#edit as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mPrivateDatum Load (0.1ms)[0m  [1mSELECT  "private_data".* FROM "private_data" WHERE "private_data"."id" = ? LIMIT 1[0m  [["id", 9]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 4]]
+  [1m[36mGender Load (0.1ms)[0m  [1mSELECT "genders".* FROM "genders"[0m
+  [1m[35mBirthy Load (0.1ms)[0m  SELECT "birthies".* FROM "birthies"
+  [1m[36mBirthm Load (0.1ms)[0m  [1mSELECT "birthms".* FROM "birthms"[0m
+  [1m[35mBirthd Load (0.2ms)[0m  SELECT "birthds".* FROM "birthds"
+  [1m[36mBlood Load (0.1ms)[0m  [1mSELECT "bloods".* FROM "bloods"[0m
+  [1m[35mSchoolg Load (0.1ms)[0m  SELECT "schoolgs".* FROM "schoolgs"
+  [1m[36mSchoolt Load (0.1ms)[0m  [1mSELECT "schoolts".* FROM "schoolts"[0m
+  [1m[35mVegetrian Load (0.1ms)[0m  SELECT "vegetrians".* FROM "vegetrians"
+  [1m[36mTshirtsize Load (0.2ms)[0m  [1mSELECT "tshirtsizes".* FROM "tshirtsizes"[0m
+  Rendered private_data/_form.html.erb (17.7ms)
+  Rendered private_data/edit.html.erb within layouts/application (19.2ms)
+Completed 200 OK in 76ms (Views: 72.5ms | ActiveRecord: 1.4ms)
+
+
+Started PATCH "/private_data/9" for 127.0.0.1 at 2016-02-07 15:24:58 +0800
+Processing by PrivateDataController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Lm9fSQIpAXNA7SublUsEcbb1VPTUtb4I0auZf5p0d0teV/3RYBzYdzaQVYCJGHsX+IBh7nQC5i6ETQItEtKH/A==", "private_datum"=>{"name"=>"傅子睿", "nickname"=>"睿睿", "gender_id"=>"1", "birthy_id"=>"1", "birthm_id"=>"1", "birthd_id"=>"1", "personcard"=>"A127518717", "blood_id"=>"1", "school"=>"建國中學", "schoolg_id"=>"1", "schoolc"=>"13", "schoolt_id"=>"1", "address"=>"文山區", "email"=>"yesray0216@gmail.com", "fb"=>"facebook.com.tw/yesray0216", "cellphone"=>"0970850216", "urgentn"=>"林美芳", "urgentr"=>"母子", "urgentc"=>"0918358021", "specialeat"=>"無", "specialsick"=>"無", "vegetrian_id"=>"1", "tshirtsize_id"=>"1", "intro"=>"帥ㄍ", "fpick"=>"22"}, "commit"=>"儲存送出", "id"=>"9"}
+  [1m[35mPrivateDatum Load (0.1ms)[0m  SELECT  "private_data".* FROM "private_data" WHERE "private_data"."id" = ? LIMIT 1  [["id", 9]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 4]]
+Unpermitted parameter: fpick
+  [1m[35m (0.3ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+Redirected to http://127.0.0.1:3000/private_data/9
+Completed 302 Found in 8ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/private_data/9" for 127.0.0.1 at 2016-02-07 15:24:58 +0800
+Processing by PrivateDataController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[35mPrivateDatum Load (0.1ms)[0m  SELECT  "private_data".* FROM "private_data" WHERE "private_data"."id" = ? LIMIT 1  [["id", 9]]
+  [1m[36mGender Load (0.1ms)[0m  [1mSELECT  "genders".* FROM "genders" WHERE "genders"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mBirthy Load (0.1ms)[0m  SELECT  "birthies".* FROM "birthies" WHERE "birthies"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mBirthm Load (0.1ms)[0m  [1mSELECT  "birthms".* FROM "birthms" WHERE "birthms"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mBirthd Load (0.1ms)[0m  SELECT  "birthds".* FROM "birthds" WHERE "birthds"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mBlood Load (0.1ms)[0m  [1mSELECT  "bloods".* FROM "bloods" WHERE "bloods"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mSchoolg Load (0.1ms)[0m  SELECT  "schoolgs".* FROM "schoolgs" WHERE "schoolgs"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mSchoolt Load (0.1ms)[0m  [1mSELECT  "schoolts".* FROM "schoolts" WHERE "schoolts"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mVegetrian Load (0.1ms)[0m  SELECT  "vegetrians".* FROM "vegetrians" WHERE "vegetrians"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mTshirtsize Load (0.1ms)[0m  [1mSELECT  "tshirtsizes".* FROM "tshirtsizes" WHERE "tshirtsizes"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered private_data/show.html.erb within layouts/application (3.8ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 4]]
+Completed 200 OK in 56ms (Views: 53.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/private_data/9/edit" for 127.0.0.1 at 2016-02-07 15:25:00 +0800
+Processing by PrivateDataController#edit as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mPrivateDatum Load (0.1ms)[0m  [1mSELECT  "private_data".* FROM "private_data" WHERE "private_data"."id" = ? LIMIT 1[0m  [["id", 9]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 4]]
+  [1m[36mGender Load (0.1ms)[0m  [1mSELECT "genders".* FROM "genders"[0m
+  [1m[35mBirthy Load (0.1ms)[0m  SELECT "birthies".* FROM "birthies"
+  [1m[36mBirthm Load (0.5ms)[0m  [1mSELECT "birthms".* FROM "birthms"[0m
+  [1m[35mBirthd Load (0.2ms)[0m  SELECT "birthds".* FROM "birthds"
+  [1m[36mBlood Load (0.1ms)[0m  [1mSELECT "bloods".* FROM "bloods"[0m
+  [1m[35mSchoolg Load (0.1ms)[0m  SELECT "schoolgs".* FROM "schoolgs"
+  [1m[36mSchoolt Load (0.1ms)[0m  [1mSELECT "schoolts".* FROM "schoolts"[0m
+  [1m[35mVegetrian Load (0.1ms)[0m  SELECT "vegetrians".* FROM "vegetrians"
+  [1m[36mTshirtsize Load (0.1ms)[0m  [1mSELECT "tshirtsizes".* FROM "tshirtsizes"[0m
+  Rendered private_data/_form.html.erb (18.1ms)
+  Rendered private_data/edit.html.erb within layouts/application (19.5ms)
+Completed 200 OK in 81ms (Views: 77.3ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-07 15:25:38 +0800
+Processing by PrivateDataController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 4]]
+  [1m[36mPrivateDatum Load (0.4ms)[0m  [1mSELECT "private_data".* FROM "private_data"[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered private_data/index.html.erb within layouts/application (24.7ms)
+Completed 200 OK in 76ms (Views: 67.9ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-07 15:25:39 +0800
+Processing by PrivateDataController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 4]]
+  [1m[36mPrivateDatum Load (0.3ms)[0m  [1mSELECT "private_data".* FROM "private_data"[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered private_data/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 57ms (Views: 55.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/private_data.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-02-07 15:25:39 +0800
+
+
+Started GET "/assets/application.self-e206702ff36375852deba9e1ccbbab414c4344dab62925e6095bf68ad4930de4.css?body=1" for 127.0.0.1 at 2016-02-07 15:25:39 +0800
+
+
+Started GET "/assets/bootstrap/alert.self-d8b7bd612b3dcfdefb7b5539b9d5848d66ccbd3e7af8bb8d48bfb3288aaa7be8.js?body=1" for 127.0.0.1 at 2016-02-07 15:25:39 +0800
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2016-02-07 15:25:39 +0800
+
+
+Started GET "/assets/bootstrap/affix.self-3555752f8a930795ee9e56751a52e6871104ae85d01b3ab8363da3802a5ecc78.js?body=1" for 127.0.0.1 at 2016-02-07 15:25:39 +0800
+
+
+Started GET "/assets/bootstrap/button.self-e74d33ba39500940a78d6fa4d2d64f6ca7fd86d60a2149641f7fde7ba711d8a1.js?body=1" for 127.0.0.1 at 2016-02-07 15:25:39 +0800
+
+
+Started GET "/assets/bootstrap/carousel.self-35d204878d906298e55bc24553e11fd89b980fc4ffe5792fe36af8c0da289c54.js?body=1" for 127.0.0.1 at 2016-02-07 15:25:39 +0800
+
+
+Started GET "/assets/bootstrap/dropdown.self-e56c2ffee4618411d43ecf15c89273f6223847ad756e1cd17545d04afa732ed4.js?body=1" for 127.0.0.1 at 2016-02-07 15:25:39 +0800
+
+
+Started GET "/assets/bootstrap/modal.self-62463080dba6b9d024ff0a3192da0e76eacbc683194f3395047c6f5cfa0acb59.js?body=1" for 127.0.0.1 at 2016-02-07 15:25:39 +0800
+
+
+Started GET "/assets/bootstrap/collapse.self-056c40532d9f0f126ec17e839f60c942f573fbd61a086e7f156306e3fc5e8c1f.js?body=1" for 127.0.0.1 at 2016-02-07 15:25:39 +0800
+
+
+Started GET "/assets/bootstrap/scrollspy.self-52afd90e8ba97d9f08617a13986e8869d6c4a45751c0bff59a6f91241e722aca.js?body=1" for 127.0.0.1 at 2016-02-07 15:25:39 +0800
+
+
+Started GET "/assets/bootstrap/tab.self-dad0d5c377f9fae26394484535ebb23ccf68afae084f896af6ea4cdf8c9f6ae0.js?body=1" for 127.0.0.1 at 2016-02-07 15:25:39 +0800
+
+
+Started GET "/assets/bootstrap/tooltip.self-facdc69246a072acb927ded77ff655f7c27a518b9357fddd45d119fbc8a0ab9f.js?body=1" for 127.0.0.1 at 2016-02-07 15:25:39 +0800
+
+
+Started GET "/assets/bootstrap/transition.self-3b268d4cd8c79e46ded7392885f72f64ffb5b0d49948a12b8cf9779f6163e13a.js?body=1" for 127.0.0.1 at 2016-02-07 15:25:39 +0800
+
+
+Started GET "/assets/bootstrap/popover.self-210cff1fb4b72b71a29b5122180cb5937c8145cd13a934dc838280f1d9607a3e.js?body=1" for 127.0.0.1 at 2016-02-07 15:25:39 +0800
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2016-02-07 15:25:39 +0800
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for 127.0.0.1 at 2016-02-07 15:25:39 +0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-02-07 15:25:39 +0800
+
+
+Started GET "/assets/private_data.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-02-07 15:25:39 +0800
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 127.0.0.1 at 2016-02-07 15:25:39 +0800
+
+
+Started GET "/private_data/9" for 127.0.0.1 at 2016-02-07 15:25:39 +0800
+Processing by PrivateDataController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[35mPrivateDatum Load (0.2ms)[0m  SELECT  "private_data".* FROM "private_data" WHERE "private_data"."id" = ? LIMIT 1  [["id", 9]]
+  [1m[36mGender Load (0.1ms)[0m  [1mSELECT  "genders".* FROM "genders" WHERE "genders"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mBirthy Load (0.1ms)[0m  SELECT  "birthies".* FROM "birthies" WHERE "birthies"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mBirthm Load (0.1ms)[0m  [1mSELECT  "birthms".* FROM "birthms" WHERE "birthms"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mBirthd Load (0.1ms)[0m  SELECT  "birthds".* FROM "birthds" WHERE "birthds"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mBlood Load (0.1ms)[0m  [1mSELECT  "bloods".* FROM "bloods" WHERE "bloods"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mSchoolg Load (0.1ms)[0m  SELECT  "schoolgs".* FROM "schoolgs" WHERE "schoolgs"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mSchoolt Load (0.2ms)[0m  [1mSELECT  "schoolts".* FROM "schoolts" WHERE "schoolts"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mVegetrian Load (0.1ms)[0m  SELECT  "vegetrians".* FROM "vegetrians" WHERE "vegetrians"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mTshirtsize Load (0.1ms)[0m  [1mSELECT  "tshirtsizes".* FROM "tshirtsizes" WHERE "tshirtsizes"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered private_data/show.html.erb within layouts/application (62.0ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 4]]
+Completed 200 OK in 119ms (Views: 114.3ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/private_data/9/edit" for 127.0.0.1 at 2016-02-07 15:25:41 +0800
+Processing by PrivateDataController#edit as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mPrivateDatum Load (0.1ms)[0m  [1mSELECT  "private_data".* FROM "private_data" WHERE "private_data"."id" = ? LIMIT 1[0m  [["id", 9]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 4]]
+  [1m[36mGender Load (0.2ms)[0m  [1mSELECT "genders".* FROM "genders"[0m
+  [1m[35mBirthy Load (0.1ms)[0m  SELECT "birthies".* FROM "birthies"
+  [1m[36mBirthm Load (0.1ms)[0m  [1mSELECT "birthms".* FROM "birthms"[0m
+  [1m[35mBirthd Load (0.2ms)[0m  SELECT "birthds".* FROM "birthds"
+  [1m[36mBlood Load (0.1ms)[0m  [1mSELECT "bloods".* FROM "bloods"[0m
+  [1m[35mSchoolg Load (0.1ms)[0m  SELECT "schoolgs".* FROM "schoolgs"
+  [1m[36mSchoolt Load (0.2ms)[0m  [1mSELECT "schoolts".* FROM "schoolts"[0m
+  [1m[35mVegetrian Load (0.1ms)[0m  SELECT "vegetrians".* FROM "vegetrians"
+  [1m[36mTshirtsize Load (0.2ms)[0m  [1mSELECT "tshirtsizes".* FROM "tshirtsizes"[0m
+  Rendered private_data/_form.html.erb (28.8ms)
+  Rendered private_data/edit.html.erb within layouts/application (30.3ms)
+Completed 200 OK in 111ms (Views: 95.5ms | ActiveRecord: 1.5ms)
+
+
+Started PATCH "/private_data/9" for 127.0.0.1 at 2016-02-07 15:25:43 +0800
+Processing by PrivateDataController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ydAsey2yV66nkyg+5e4RJ95gRscgsPCx74dnFMzba2K56I7jT4eOqtHuViX5vW5BkBVz3YAHqJe6YfxGRH2b1Q==", "private_datum"=>{"name"=>"傅子睿", "nickname"=>"睿睿", "gender_id"=>"1", "birthy_id"=>"1", "birthm_id"=>"1", "birthd_id"=>"1", "personcard"=>"A127518717", "blood_id"=>"1", "school"=>"建國中學", "schoolg_id"=>"1", "schoolc"=>"13", "schoolt_id"=>"1", "address"=>"文山區", "email"=>"yesray0216@gmail.com", "fb"=>"facebook.com.tw/yesray0216", "cellphone"=>"0970850216", "urgentn"=>"林美芳", "urgentr"=>"母子", "urgentc"=>"0918358021", "specialeat"=>"無", "specialsick"=>"無", "vegetrian_id"=>"1", "tshirtsize_id"=>"1", "intro"=>"帥ㄍ", "fpick"=>"1"}, "commit"=>"儲存送出", "id"=>"9"}
+  [1m[35mPrivateDatum Load (0.1ms)[0m  SELECT  "private_data".* FROM "private_data" WHERE "private_data"."id" = ? LIMIT 1  [["id", 9]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 4]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "private_data" SET "fpick" = ?, "updated_at" = ? WHERE "private_data"."id" = ?[0m  [["fpick", 1], ["updated_at", "2016-02-07 07:25:43.730310"], ["id", 9]]
+  [1m[35m (0.6ms)[0m  commit transaction
+Redirected to http://127.0.0.1:3000/private_data/9
+Completed 302 Found in 7ms (ActiveRecord: 1.1ms)
+
+
+Started GET "/private_data/9" for 127.0.0.1 at 2016-02-07 15:25:43 +0800
+Processing by PrivateDataController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mPrivateDatum Load (0.2ms)[0m  [1mSELECT  "private_data".* FROM "private_data" WHERE "private_data"."id" = ? LIMIT 1[0m  [["id", 9]]
+  [1m[35mGender Load (0.1ms)[0m  SELECT  "genders".* FROM "genders" WHERE "genders"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mBirthy Load (0.1ms)[0m  [1mSELECT  "birthies".* FROM "birthies" WHERE "birthies"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mBirthm Load (0.1ms)[0m  SELECT  "birthms".* FROM "birthms" WHERE "birthms"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mBirthd Load (0.1ms)[0m  [1mSELECT  "birthds".* FROM "birthds" WHERE "birthds"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mBlood Load (0.1ms)[0m  SELECT  "bloods".* FROM "bloods" WHERE "bloods"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mSchoolg Load (0.0ms)[0m  [1mSELECT  "schoolgs".* FROM "schoolgs" WHERE "schoolgs"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mSchoolt Load (0.1ms)[0m  SELECT  "schoolts".* FROM "schoolts" WHERE "schoolts"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mVegetrian Load (0.1ms)[0m  [1mSELECT  "vegetrians".* FROM "vegetrians" WHERE "vegetrians"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mTshirtsize Load (0.1ms)[0m  SELECT  "tshirtsizes".* FROM "tshirtsizes" WHERE "tshirtsizes"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered private_data/show.html.erb within layouts/application (3.3ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 4]]
+Completed 200 OK in 62ms (Views: 59.3ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/private_data/9/edit" for 127.0.0.1 at 2016-02-07 15:25:45 +0800
+Processing by PrivateDataController#edit as HTML
+  Parameters: {"id"=>"9"}
+  [1m[35mPrivateDatum Load (0.1ms)[0m  SELECT  "private_data".* FROM "private_data" WHERE "private_data"."id" = ? LIMIT 1  [["id", 9]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 4]]
+  [1m[35mGender Load (0.1ms)[0m  SELECT "genders".* FROM "genders"
+  [1m[36mBirthy Load (0.2ms)[0m  [1mSELECT "birthies".* FROM "birthies"[0m
+  [1m[35mBirthm Load (0.2ms)[0m  SELECT "birthms".* FROM "birthms"
+  [1m[36mBirthd Load (0.2ms)[0m  [1mSELECT "birthds".* FROM "birthds"[0m
+  [1m[35mBlood Load (0.1ms)[0m  SELECT "bloods".* FROM "bloods"
+  [1m[36mSchoolg Load (0.1ms)[0m  [1mSELECT "schoolgs".* FROM "schoolgs"[0m
+  [1m[35mSchoolt Load (0.1ms)[0m  SELECT "schoolts".* FROM "schoolts"
+  [1m[36mVegetrian Load (0.1ms)[0m  [1mSELECT "vegetrians".* FROM "vegetrians"[0m
+  [1m[35mTshirtsize Load (0.2ms)[0m  SELECT "tshirtsizes".* FROM "tshirtsizes"
+  Rendered private_data/_form.html.erb (18.1ms)
+  Rendered private_data/edit.html.erb within layouts/application (20.2ms)
+Completed 200 OK in 96ms (Views: 93.0ms | ActiveRecord: 1.6ms)
+
+
+Started PATCH "/private_data/9" for 127.0.0.1 at 2016-02-07 15:25:46 +0800
+Processing by PrivateDataController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"8jF22LrMSnmLTbRUqVL6loD/oGRIcC1zfY1YCjF3zxyCCdRA2PmTff0wyk+1AYXwzoqVfujHdVUoa8NYudE/qw==", "private_datum"=>{"name"=>"傅子睿", "nickname"=>"睿睿", "gender_id"=>"1", "birthy_id"=>"1", "birthm_id"=>"1", "birthd_id"=>"1", "personcard"=>"A127518717", "blood_id"=>"1", "school"=>"建國中學", "schoolg_id"=>"1", "schoolc"=>"13", "schoolt_id"=>"1", "address"=>"文山區", "email"=>"yesray0216@gmail.com", "fb"=>"facebook.com.tw/yesray0216", "cellphone"=>"0970850216", "urgentn"=>"林美芳", "urgentr"=>"母子", "urgentc"=>"0918358021", "specialeat"=>"無", "specialsick"=>"無", "vegetrian_id"=>"1", "tshirtsize_id"=>"1", "intro"=>"帥ㄍ", "fpick"=>"1"}, "commit"=>"儲存送出", "id"=>"9"}
+  [1m[36mPrivateDatum Load (0.1ms)[0m  [1mSELECT  "private_data".* FROM "private_data" WHERE "private_data"."id" = ? LIMIT 1[0m  [["id", 9]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 4]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+Redirected to http://127.0.0.1:3000/private_data/9
+Completed 302 Found in 6ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/private_data/9" for 127.0.0.1 at 2016-02-07 15:25:46 +0800
+Processing by PrivateDataController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mPrivateDatum Load (0.1ms)[0m  [1mSELECT  "private_data".* FROM "private_data" WHERE "private_data"."id" = ? LIMIT 1[0m  [["id", 9]]
+  [1m[35mGender Load (0.1ms)[0m  SELECT  "genders".* FROM "genders" WHERE "genders"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mBirthy Load (0.1ms)[0m  [1mSELECT  "birthies".* FROM "birthies" WHERE "birthies"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mBirthm Load (0.1ms)[0m  SELECT  "birthms".* FROM "birthms" WHERE "birthms"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mBirthd Load (0.1ms)[0m  [1mSELECT  "birthds".* FROM "birthds" WHERE "birthds"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mBlood Load (0.1ms)[0m  SELECT  "bloods".* FROM "bloods" WHERE "bloods"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mSchoolg Load (0.1ms)[0m  [1mSELECT  "schoolgs".* FROM "schoolgs" WHERE "schoolgs"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mSchoolt Load (0.1ms)[0m  SELECT  "schoolts".* FROM "schoolts" WHERE "schoolts"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mVegetrian Load (0.1ms)[0m  [1mSELECT  "vegetrians".* FROM "vegetrians" WHERE "vegetrians"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mTshirtsize Load (0.1ms)[0m  SELECT  "tshirtsizes".* FROM "tshirtsizes" WHERE "tshirtsizes"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered private_data/show.html.erb within layouts/application (4.0ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 4]]
+Completed 200 OK in 70ms (Views: 68.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/private_data/9" for 127.0.0.1 at 2016-02-07 15:26:20 +0800
+Processing by PrivateDataController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[35mPrivateDatum Load (0.2ms)[0m  SELECT  "private_data".* FROM "private_data" WHERE "private_data"."id" = ? LIMIT 1  [["id", 9]]
+  [1m[36mGender Load (0.1ms)[0m  [1mSELECT  "genders".* FROM "genders" WHERE "genders"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mBirthy Load (0.1ms)[0m  SELECT  "birthies".* FROM "birthies" WHERE "birthies"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mBirthm Load (0.1ms)[0m  [1mSELECT  "birthms".* FROM "birthms" WHERE "birthms"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mBirthd Load (0.1ms)[0m  SELECT  "birthds".* FROM "birthds" WHERE "birthds"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mBlood Load (0.3ms)[0m  [1mSELECT  "bloods".* FROM "bloods" WHERE "bloods"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mSchoolg Load (0.1ms)[0m  SELECT  "schoolgs".* FROM "schoolgs" WHERE "schoolgs"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mSchoolt Load (0.1ms)[0m  [1mSELECT  "schoolts".* FROM "schoolts" WHERE "schoolts"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mVegetrian Load (0.1ms)[0m  SELECT  "vegetrians".* FROM "vegetrians" WHERE "vegetrians"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mTshirtsize Load (0.0ms)[0m  [1mSELECT  "tshirtsizes".* FROM "tshirtsizes" WHERE "tshirtsizes"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered private_data/show.html.erb within layouts/application (6.1ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 4]]
+Completed 200 OK in 54ms (Views: 52.0ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/private_data.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-02-07 15:26:20 +0800
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2016-02-07 15:26:20 +0800
+
+
+Started GET "/assets/bootstrap/button.self-e74d33ba39500940a78d6fa4d2d64f6ca7fd86d60a2149641f7fde7ba711d8a1.js?body=1" for 127.0.0.1 at 2016-02-07 15:26:20 +0800
+
+
+Started GET "/assets/bootstrap/affix.self-3555752f8a930795ee9e56751a52e6871104ae85d01b3ab8363da3802a5ecc78.js?body=1" for 127.0.0.1 at 2016-02-07 15:26:20 +0800
+
+
+Started GET "/assets/bootstrap/alert.self-d8b7bd612b3dcfdefb7b5539b9d5848d66ccbd3e7af8bb8d48bfb3288aaa7be8.js?body=1" for 127.0.0.1 at 2016-02-07 15:26:20 +0800
+
+
+Started GET "/assets/application.self-e206702ff36375852deba9e1ccbbab414c4344dab62925e6095bf68ad4930de4.css?body=1" for 127.0.0.1 at 2016-02-07 15:26:20 +0800
+
+
+Started GET "/assets/bootstrap/carousel.self-35d204878d906298e55bc24553e11fd89b980fc4ffe5792fe36af8c0da289c54.js?body=1" for 127.0.0.1 at 2016-02-07 15:26:20 +0800
+
+
+Started GET "/assets/bootstrap/collapse.self-056c40532d9f0f126ec17e839f60c942f573fbd61a086e7f156306e3fc5e8c1f.js?body=1" for 127.0.0.1 at 2016-02-07 15:26:20 +0800
+
+
+Started GET "/assets/bootstrap/dropdown.self-e56c2ffee4618411d43ecf15c89273f6223847ad756e1cd17545d04afa732ed4.js?body=1" for 127.0.0.1 at 2016-02-07 15:26:20 +0800
+
+
+Started GET "/assets/bootstrap/modal.self-62463080dba6b9d024ff0a3192da0e76eacbc683194f3395047c6f5cfa0acb59.js?body=1" for 127.0.0.1 at 2016-02-07 15:26:20 +0800
+
+
+Started GET "/assets/bootstrap/scrollspy.self-52afd90e8ba97d9f08617a13986e8869d6c4a45751c0bff59a6f91241e722aca.js?body=1" for 127.0.0.1 at 2016-02-07 15:26:20 +0800
+
+
+Started GET "/assets/bootstrap/tab.self-dad0d5c377f9fae26394484535ebb23ccf68afae084f896af6ea4cdf8c9f6ae0.js?body=1" for 127.0.0.1 at 2016-02-07 15:26:20 +0800
+
+
+Started GET "/assets/bootstrap/transition.self-3b268d4cd8c79e46ded7392885f72f64ffb5b0d49948a12b8cf9779f6163e13a.js?body=1" for 127.0.0.1 at 2016-02-07 15:26:20 +0800
+
+
+Started GET "/assets/bootstrap/tooltip.self-facdc69246a072acb927ded77ff655f7c27a518b9357fddd45d119fbc8a0ab9f.js?body=1" for 127.0.0.1 at 2016-02-07 15:26:20 +0800
+
+
+Started GET "/assets/bootstrap/popover.self-210cff1fb4b72b71a29b5122180cb5937c8145cd13a934dc838280f1d9607a3e.js?body=1" for 127.0.0.1 at 2016-02-07 15:26:20 +0800
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for 127.0.0.1 at 2016-02-07 15:26:20 +0800
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2016-02-07 15:26:20 +0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-02-07 15:26:20 +0800
+
+
+Started GET "/assets/private_data.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-02-07 15:26:20 +0800
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 127.0.0.1 at 2016-02-07 15:26:20 +0800
+
+
+Started GET "/private_data/9/edit" for 127.0.0.1 at 2016-02-07 15:26:22 +0800
+Processing by PrivateDataController#edit as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mPrivateDatum Load (0.1ms)[0m  [1mSELECT  "private_data".* FROM "private_data" WHERE "private_data"."id" = ? LIMIT 1[0m  [["id", 9]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 4]]
+  [1m[36mGender Load (0.1ms)[0m  [1mSELECT "genders".* FROM "genders"[0m
+  [1m[35mBirthy Load (0.1ms)[0m  SELECT "birthies".* FROM "birthies"
+  [1m[36mBirthm Load (0.1ms)[0m  [1mSELECT "birthms".* FROM "birthms"[0m
+  [1m[35mBirthd Load (0.2ms)[0m  SELECT "birthds".* FROM "birthds"
+  [1m[36mBlood Load (0.1ms)[0m  [1mSELECT "bloods".* FROM "bloods"[0m
+  [1m[35mSchoolg Load (0.1ms)[0m  SELECT "schoolgs".* FROM "schoolgs"
+  [1m[36mSchoolt Load (0.1ms)[0m  [1mSELECT "schoolts".* FROM "schoolts"[0m
+  [1m[35mVegetrian Load (0.1ms)[0m  SELECT "vegetrians".* FROM "vegetrians"
+  [1m[36mTshirtsize Load (0.1ms)[0m  [1mSELECT "tshirtsizes".* FROM "tshirtsizes"[0m
+  Rendered private_data/_form.html.erb (14.5ms)
+  Rendered private_data/edit.html.erb within layouts/application (15.8ms)
+Completed 200 OK in 56ms (Views: 52.7ms | ActiveRecord: 1.3ms)
+
+
+Started PATCH "/private_data/9" for 127.0.0.1 at 2016-02-07 15:26:25 +0800
+Processing by PrivateDataController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"qHoy1MeSGYj4SWihj6buAaMyURsb7NouegdUCtZuftzYQpBMpafAjI40FrqT9ZFn7UdkAbtbgggv4c9YXsiOaw==", "private_datum"=>{"name"=>"傅子睿", "nickname"=>"睿睿", "gender_id"=>"1", "birthy_id"=>"1", "birthm_id"=>"1", "birthd_id"=>"1", "personcard"=>"A127518717", "blood_id"=>"1", "school"=>"建國中學", "schoolg_id"=>"1", "schoolc"=>"13", "schoolt_id"=>"1", "address"=>"文山區", "email"=>"yesray0216@gmail.com", "fb"=>"facebook.com.tw/yesray0216", "cellphone"=>"0970850216", "urgentn"=>"林美芳", "urgentr"=>"母子", "urgentc"=>"0918358021", "specialeat"=>"無", "specialsick"=>"無", "vegetrian_id"=>"1", "tshirtsize_id"=>"1", "intro"=>"帥ㄍ", "fpick"=>"ggg"}, "commit"=>"儲存送出", "id"=>"9"}
+  [1m[35mPrivateDatum Load (0.1ms)[0m  SELECT  "private_data".* FROM "private_data" WHERE "private_data"."id" = ? LIMIT 1  [["id", 9]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 4]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "private_data" SET "fpick" = ?, "updated_at" = ? WHERE "private_data"."id" = ?[0m  [["fpick", 0], ["updated_at", "2016-02-07 07:26:25.650868"], ["id", 9]]
+  [1m[35m (0.8ms)[0m  commit transaction
+Redirected to http://127.0.0.1:3000/private_data/9
+Completed 302 Found in 7ms (ActiveRecord: 1.4ms)
+
+
+Started GET "/private_data/9" for 127.0.0.1 at 2016-02-07 15:26:25 +0800
+Processing by PrivateDataController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mPrivateDatum Load (0.1ms)[0m  [1mSELECT  "private_data".* FROM "private_data" WHERE "private_data"."id" = ? LIMIT 1[0m  [["id", 9]]
+  [1m[35mGender Load (0.1ms)[0m  SELECT  "genders".* FROM "genders" WHERE "genders"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mBirthy Load (0.1ms)[0m  [1mSELECT  "birthies".* FROM "birthies" WHERE "birthies"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mBirthm Load (0.0ms)[0m  SELECT  "birthms".* FROM "birthms" WHERE "birthms"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mBirthd Load (0.1ms)[0m  [1mSELECT  "birthds".* FROM "birthds" WHERE "birthds"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mBlood Load (0.1ms)[0m  SELECT  "bloods".* FROM "bloods" WHERE "bloods"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mSchoolg Load (0.1ms)[0m  [1mSELECT  "schoolgs".* FROM "schoolgs" WHERE "schoolgs"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mSchoolt Load (0.1ms)[0m  SELECT  "schoolts".* FROM "schoolts" WHERE "schoolts"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mVegetrian Load (0.1ms)[0m  [1mSELECT  "vegetrians".* FROM "vegetrians" WHERE "vegetrians"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mTshirtsize Load (0.0ms)[0m  SELECT  "tshirtsizes".* FROM "tshirtsizes" WHERE "tshirtsizes"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered private_data/show.html.erb within layouts/application (3.3ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 4]]
+Completed 200 OK in 44ms (Views: 42.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/private_data/9/edit" for 127.0.0.1 at 2016-02-07 15:26:27 +0800
+Processing by PrivateDataController#edit as HTML
+  Parameters: {"id"=>"9"}
+  [1m[35mPrivateDatum Load (0.1ms)[0m  SELECT  "private_data".* FROM "private_data" WHERE "private_data"."id" = ? LIMIT 1  [["id", 9]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 4]]
+  [1m[35mGender Load (0.1ms)[0m  SELECT "genders".* FROM "genders"
+  [1m[36mBirthy Load (0.1ms)[0m  [1mSELECT "birthies".* FROM "birthies"[0m
+  [1m[35mBirthm Load (0.1ms)[0m  SELECT "birthms".* FROM "birthms"
+  [1m[36mBirthd Load (0.2ms)[0m  [1mSELECT "birthds".* FROM "birthds"[0m
+  [1m[35mBlood Load (0.4ms)[0m  SELECT "bloods".* FROM "bloods"
+  [1m[36mSchoolg Load (0.1ms)[0m  [1mSELECT "schoolgs".* FROM "schoolgs"[0m
+  [1m[35mSchoolt Load (0.1ms)[0m  SELECT "schoolts".* FROM "schoolts"
+  [1m[36mVegetrian Load (0.1ms)[0m  [1mSELECT "vegetrians".* FROM "vegetrians"[0m
+  [1m[35mTshirtsize Load (0.1ms)[0m  SELECT "tshirtsizes".* FROM "tshirtsizes"
+  Rendered private_data/_form.html.erb (16.3ms)
+  Rendered private_data/edit.html.erb within layouts/application (17.9ms)
+Completed 200 OK in 58ms (Views: 54.8ms | ActiveRecord: 1.6ms)
+
+
+Started PATCH "/private_data/9" for 127.0.0.1 at 2016-02-07 15:26:29 +0800
+Processing by PrivateDataController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"npVB0XkP9QzLDZPS1sug2Wi1MJrDCmy4OhHbnrMMXSXureNJGzosCL1w7cnKmN+/JsAFgGO9NJ5v90DMO6qtkg==", "private_datum"=>{"name"=>"傅子睿", "nickname"=>"睿睿", "gender_id"=>"1", "birthy_id"=>"1", "birthm_id"=>"1", "birthd_id"=>"1", "personcard"=>"A127518717", "blood_id"=>"1", "school"=>"建國中學", "schoolg_id"=>"1", "schoolc"=>"13", "schoolt_id"=>"1", "address"=>"文山區", "email"=>"yesray0216@gmail.com", "fb"=>"facebook.com.tw/yesray0216", "cellphone"=>"0970850216", "urgentn"=>"林美芳", "urgentr"=>"母子", "urgentc"=>"0918358021", "specialeat"=>"無", "specialsick"=>"無", "vegetrian_id"=>"1", "tshirtsize_id"=>"1", "intro"=>"帥ㄍ", "fpick"=>"15"}, "commit"=>"儲存送出", "id"=>"9"}
+  [1m[36mPrivateDatum Load (0.1ms)[0m  [1mSELECT  "private_data".* FROM "private_data" WHERE "private_data"."id" = ? LIMIT 1[0m  [["id", 9]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 4]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "private_data" SET "fpick" = ?, "updated_at" = ? WHERE "private_data"."id" = ?  [["fpick", 15], ["updated_at", "2016-02-07 07:26:29.514806"], ["id", 9]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+Redirected to http://127.0.0.1:3000/private_data/9
+Completed 302 Found in 8ms (ActiveRecord: 1.2ms)
+
+
+Started GET "/private_data/9" for 127.0.0.1 at 2016-02-07 15:26:29 +0800
+Processing by PrivateDataController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[35mPrivateDatum Load (0.1ms)[0m  SELECT  "private_data".* FROM "private_data" WHERE "private_data"."id" = ? LIMIT 1  [["id", 9]]
+  [1m[36mGender Load (0.1ms)[0m  [1mSELECT  "genders".* FROM "genders" WHERE "genders"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mBirthy Load (0.1ms)[0m  SELECT  "birthies".* FROM "birthies" WHERE "birthies"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mBirthm Load (0.0ms)[0m  [1mSELECT  "birthms".* FROM "birthms" WHERE "birthms"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mBirthd Load (0.0ms)[0m  SELECT  "birthds".* FROM "birthds" WHERE "birthds"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mBlood Load (0.0ms)[0m  [1mSELECT  "bloods".* FROM "bloods" WHERE "bloods"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mSchoolg Load (0.0ms)[0m  SELECT  "schoolgs".* FROM "schoolgs" WHERE "schoolgs"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mSchoolt Load (0.0ms)[0m  [1mSELECT  "schoolts".* FROM "schoolts" WHERE "schoolts"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mVegetrian Load (0.0ms)[0m  SELECT  "vegetrians".* FROM "vegetrians" WHERE "vegetrians"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mTshirtsize Load (0.0ms)[0m  [1mSELECT  "tshirtsizes".* FROM "tshirtsizes" WHERE "tshirtsizes"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered private_data/show.html.erb within layouts/application (2.7ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 4]]
+Completed 200 OK in 59ms (Views: 57.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/private_data/9/edit" for 127.0.0.1 at 2016-02-07 15:26:31 +0800
+Processing by PrivateDataController#edit as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mPrivateDatum Load (0.2ms)[0m  [1mSELECT  "private_data".* FROM "private_data" WHERE "private_data"."id" = ? LIMIT 1[0m  [["id", 9]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 4]]
+  [1m[36mGender Load (0.1ms)[0m  [1mSELECT "genders".* FROM "genders"[0m
+  [1m[35mBirthy Load (0.1ms)[0m  SELECT "birthies".* FROM "birthies"
+  [1m[36mBirthm Load (0.3ms)[0m  [1mSELECT "birthms".* FROM "birthms"[0m
+  [1m[35mBirthd Load (0.2ms)[0m  SELECT "birthds".* FROM "birthds"
+  [1m[36mBlood Load (0.1ms)[0m  [1mSELECT "bloods".* FROM "bloods"[0m
+  [1m[35mSchoolg Load (0.1ms)[0m  SELECT "schoolgs".* FROM "schoolgs"
+  [1m[36mSchoolt Load (0.1ms)[0m  [1mSELECT "schoolts".* FROM "schoolts"[0m
+  [1m[35mVegetrian Load (0.1ms)[0m  SELECT "vegetrians".* FROM "vegetrians"
+  [1m[36mTshirtsize Load (0.2ms)[0m  [1mSELECT "tshirtsizes".* FROM "tshirtsizes"[0m
+  Rendered private_data/_form.html.erb (17.7ms)
+  Rendered private_data/edit.html.erb within layouts/application (19.1ms)
+Completed 200 OK in 86ms (Views: 81.1ms | ActiveRecord: 1.8ms)
+
+
+Started PATCH "/private_data/9" for 127.0.0.1 at 2016-02-07 15:26:33 +0800
+Processing by PrivateDataController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"umdRft7o23JVD5n+8EzFZG+zla1HlGUFTGuqPq55N93KX/PmvN0CdiNy5+XsH7oCIcagt+cjPSMZjTFsJt/Hag==", "private_datum"=>{"name"=>"傅子睿", "nickname"=>"睿睿", "gender_id"=>"1", "birthy_id"=>"1", "birthm_id"=>"1", "birthd_id"=>"1", "personcard"=>"A127518717", "blood_id"=>"1", "school"=>"建國中學", "schoolg_id"=>"1", "schoolc"=>"13", "schoolt_id"=>"1", "address"=>"文山區", "email"=>"yesray0216@gmail.com", "fb"=>"facebook.com.tw/yesray0216", "cellphone"=>"0970850216", "urgentn"=>"林美芳", "urgentr"=>"母子", "urgentc"=>"0918358021", "specialeat"=>"無", "specialsick"=>"無", "vegetrian_id"=>"1", "tshirtsize_id"=>"1", "intro"=>"帥ㄍ", "fpick"=>"15"}, "commit"=>"儲存送出", "id"=>"9"}
+  [1m[35mPrivateDatum Load (0.1ms)[0m  SELECT  "private_data".* FROM "private_data" WHERE "private_data"."id" = ? LIMIT 1  [["id", 9]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 4]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://127.0.0.1:3000/private_data/9
+Completed 302 Found in 7ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/private_data/9" for 127.0.0.1 at 2016-02-07 15:26:33 +0800
+Processing by PrivateDataController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[35mPrivateDatum Load (0.1ms)[0m  SELECT  "private_data".* FROM "private_data" WHERE "private_data"."id" = ? LIMIT 1  [["id", 9]]
+  [1m[36mGender Load (0.2ms)[0m  [1mSELECT  "genders".* FROM "genders" WHERE "genders"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mBirthy Load (0.1ms)[0m  SELECT  "birthies".* FROM "birthies" WHERE "birthies"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mBirthm Load (0.1ms)[0m  [1mSELECT  "birthms".* FROM "birthms" WHERE "birthms"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mBirthd Load (0.1ms)[0m  SELECT  "birthds".* FROM "birthds" WHERE "birthds"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mBlood Load (0.1ms)[0m  [1mSELECT  "bloods".* FROM "bloods" WHERE "bloods"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mSchoolg Load (0.1ms)[0m  SELECT  "schoolgs".* FROM "schoolgs" WHERE "schoolgs"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mSchoolt Load (0.1ms)[0m  [1mSELECT  "schoolts".* FROM "schoolts" WHERE "schoolts"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mVegetrian Load (0.1ms)[0m  SELECT  "vegetrians".* FROM "vegetrians" WHERE "vegetrians"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mTshirtsize Load (0.1ms)[0m  [1mSELECT  "tshirtsizes".* FROM "tshirtsizes" WHERE "tshirtsizes"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered private_data/show.html.erb within layouts/application (4.2ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 4]]
+Completed 200 OK in 57ms (Views: 55.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-07 15:26:33 +0800
+Processing by PrivateDataController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 4]]
+  [1m[35mPrivateDatum Load (0.2ms)[0m  SELECT "private_data".* FROM "private_data"
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered private_data/index.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 68ms (Views: 67.3ms | ActiveRecord: 0.4ms)
