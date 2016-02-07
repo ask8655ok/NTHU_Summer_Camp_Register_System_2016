@@ -45369,3 +45369,775 @@ Processing by CampsController#index as HTML
   Rendered camps/index.html.erb within layouts/application (2.5ms)
   [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 4]]
 Completed 200 OK in 55ms (Views: 54.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-07 21:59:48 +0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PrivateDataController#index as HTML
+  Rendered private_data/index.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 369ms (Views: 353.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/camps.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-02-07 21:59:49 +0800
+
+
+Started GET "/assets/private_data.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-02-07 21:59:49 +0800
+
+
+Started GET "/assets/scaffolds.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-02-07 21:59:49 +0800
+
+
+Started GET "/assets/application.self-e206702ff36375852deba9e1ccbbab414c4344dab62925e6095bf68ad4930de4.css?body=1" for 127.0.0.1 at 2016-02-07 21:59:49 +0800
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2016-02-07 21:59:49 +0800
+
+
+Started GET "/assets/bootstrap/affix.self-3555752f8a930795ee9e56751a52e6871104ae85d01b3ab8363da3802a5ecc78.js?body=1" for 127.0.0.1 at 2016-02-07 21:59:49 +0800
+
+
+Started GET "/assets/bootstrap/alert.self-d8b7bd612b3dcfdefb7b5539b9d5848d66ccbd3e7af8bb8d48bfb3288aaa7be8.js?body=1" for 127.0.0.1 at 2016-02-07 21:59:49 +0800
+
+
+Started GET "/assets/bootstrap/button.self-e74d33ba39500940a78d6fa4d2d64f6ca7fd86d60a2149641f7fde7ba711d8a1.js?body=1" for 127.0.0.1 at 2016-02-07 21:59:49 +0800
+
+
+Started GET "/assets/bootstrap/carousel.self-35d204878d906298e55bc24553e11fd89b980fc4ffe5792fe36af8c0da289c54.js?body=1" for 127.0.0.1 at 2016-02-07 21:59:49 +0800
+
+
+Started GET "/assets/bootstrap/collapse.self-056c40532d9f0f126ec17e839f60c942f573fbd61a086e7f156306e3fc5e8c1f.js?body=1" for 127.0.0.1 at 2016-02-07 21:59:49 +0800
+
+
+Started GET "/assets/bootstrap/dropdown.self-e56c2ffee4618411d43ecf15c89273f6223847ad756e1cd17545d04afa732ed4.js?body=1" for 127.0.0.1 at 2016-02-07 21:59:49 +0800
+
+
+Started GET "/assets/bootstrap/modal.self-62463080dba6b9d024ff0a3192da0e76eacbc683194f3395047c6f5cfa0acb59.js?body=1" for 127.0.0.1 at 2016-02-07 21:59:49 +0800
+
+
+Started GET "/assets/bootstrap/scrollspy.self-52afd90e8ba97d9f08617a13986e8869d6c4a45751c0bff59a6f91241e722aca.js?body=1" for 127.0.0.1 at 2016-02-07 21:59:49 +0800
+
+
+Started GET "/assets/bootstrap/tab.self-dad0d5c377f9fae26394484535ebb23ccf68afae084f896af6ea4cdf8c9f6ae0.js?body=1" for 127.0.0.1 at 2016-02-07 21:59:49 +0800
+
+
+Started GET "/assets/bootstrap/transition.self-3b268d4cd8c79e46ded7392885f72f64ffb5b0d49948a12b8cf9779f6163e13a.js?body=1" for 127.0.0.1 at 2016-02-07 21:59:49 +0800
+
+
+Started GET "/assets/bootstrap/tooltip.self-facdc69246a072acb927ded77ff655f7c27a518b9357fddd45d119fbc8a0ab9f.js?body=1" for 127.0.0.1 at 2016-02-07 21:59:49 +0800
+
+
+Started GET "/assets/bootstrap/popover.self-210cff1fb4b72b71a29b5122180cb5937c8145cd13a934dc838280f1d9607a3e.js?body=1" for 127.0.0.1 at 2016-02-07 21:59:49 +0800
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for 127.0.0.1 at 2016-02-07 21:59:49 +0800
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2016-02-07 21:59:49 +0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-02-07 21:59:49 +0800
+
+
+Started GET "/assets/camps.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-02-07 21:59:49 +0800
+
+
+Started GET "/assets/private_data.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-02-07 21:59:49 +0800
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 127.0.0.1 at 2016-02-07 21:59:49 +0800
+
+
+Started GET "/camps" for 127.0.0.1 at 2016-02-07 21:59:52 +0800
+Processing by CampsController#index as HTML
+  [1m[35mCamp Load (0.2ms)[0m  SELECT "camps".* FROM "camps"
+  Rendered camps/index.html.erb within layouts/application (18.9ms)
+Completed 200 OK in 103ms (Views: 100.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/camps" for 127.0.0.1 at 2016-02-07 22:00:22 +0800
+Processing by CampsController#index as HTML
+  Rendered camps/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 73ms (Views: 72.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/private_data.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-02-07 22:00:23 +0800
+
+
+Started GET "/assets/scaffolds.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-02-07 22:00:23 +0800
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2016-02-07 22:00:23 +0800
+
+
+Started GET "/assets/application.self-e206702ff36375852deba9e1ccbbab414c4344dab62925e6095bf68ad4930de4.css?body=1" for 127.0.0.1 at 2016-02-07 22:00:23 +0800
+
+
+Started GET "/assets/bootstrap/affix.self-3555752f8a930795ee9e56751a52e6871104ae85d01b3ab8363da3802a5ecc78.js?body=1" for 127.0.0.1 at 2016-02-07 22:00:23 +0800
+
+
+Started GET "/assets/bootstrap/alert.self-d8b7bd612b3dcfdefb7b5539b9d5848d66ccbd3e7af8bb8d48bfb3288aaa7be8.js?body=1" for 127.0.0.1 at 2016-02-07 22:00:23 +0800
+
+
+Started GET "/assets/camps.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-02-07 22:00:23 +0800
+
+
+Started GET "/assets/bootstrap/button.self-e74d33ba39500940a78d6fa4d2d64f6ca7fd86d60a2149641f7fde7ba711d8a1.js?body=1" for 127.0.0.1 at 2016-02-07 22:00:23 +0800
+
+
+Started GET "/assets/bootstrap/carousel.self-35d204878d906298e55bc24553e11fd89b980fc4ffe5792fe36af8c0da289c54.js?body=1" for 127.0.0.1 at 2016-02-07 22:00:23 +0800
+
+
+Started GET "/assets/bootstrap/dropdown.self-e56c2ffee4618411d43ecf15c89273f6223847ad756e1cd17545d04afa732ed4.js?body=1" for 127.0.0.1 at 2016-02-07 22:00:23 +0800
+
+
+Started GET "/assets/bootstrap/modal.self-62463080dba6b9d024ff0a3192da0e76eacbc683194f3395047c6f5cfa0acb59.js?body=1" for 127.0.0.1 at 2016-02-07 22:00:23 +0800
+
+
+Started GET "/assets/bootstrap/scrollspy.self-52afd90e8ba97d9f08617a13986e8869d6c4a45751c0bff59a6f91241e722aca.js?body=1" for 127.0.0.1 at 2016-02-07 22:00:23 +0800
+
+
+Started GET "/assets/bootstrap/tab.self-dad0d5c377f9fae26394484535ebb23ccf68afae084f896af6ea4cdf8c9f6ae0.js?body=1" for 127.0.0.1 at 2016-02-07 22:00:23 +0800
+
+
+Started GET "/assets/bootstrap/transition.self-3b268d4cd8c79e46ded7392885f72f64ffb5b0d49948a12b8cf9779f6163e13a.js?body=1" for 127.0.0.1 at 2016-02-07 22:00:23 +0800
+
+
+Started GET "/assets/bootstrap/tooltip.self-facdc69246a072acb927ded77ff655f7c27a518b9357fddd45d119fbc8a0ab9f.js?body=1" for 127.0.0.1 at 2016-02-07 22:00:23 +0800
+
+
+Started GET "/assets/bootstrap/collapse.self-056c40532d9f0f126ec17e839f60c942f573fbd61a086e7f156306e3fc5e8c1f.js?body=1" for 127.0.0.1 at 2016-02-07 22:00:23 +0800
+
+
+Started GET "/assets/bootstrap/popover.self-210cff1fb4b72b71a29b5122180cb5937c8145cd13a934dc838280f1d9607a3e.js?body=1" for 127.0.0.1 at 2016-02-07 22:00:23 +0800
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2016-02-07 22:00:23 +0800
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for 127.0.0.1 at 2016-02-07 22:00:23 +0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-02-07 22:00:23 +0800
+
+
+Started GET "/assets/camps.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-02-07 22:00:23 +0800
+
+
+Started GET "/assets/private_data.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-02-07 22:00:23 +0800
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 127.0.0.1 at 2016-02-07 22:00:23 +0800
+
+
+Started GET "/camps" for 127.0.0.1 at 2016-02-07 22:00:47 +0800
+Processing by CampsController#index as HTML
+  Rendered camps/index.html.erb within layouts/application (1.1ms)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms)
+
+SyntaxError (/Users/Ray/Desktop/NTHU_Summer_Camp_Register_System_2016/app/views/camps/index.html.erb:54: syntax error, unexpected keyword_ensure, expecting keyword_end
+/Users/Ray/Desktop/NTHU_Summer_Camp_Register_System_2016/app/views/camps/index.html.erb:56: syntax error, unexpected end-of-input, expecting keyword_end):
+  app/views/camps/index.html.erb:54: syntax error, unexpected keyword_ensure, expecting keyword_end
+  app/views/camps/index.html.erb:56: syntax error, unexpected end-of-input, expecting keyword_end
+
+
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.2ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.5ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (68.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (47.7ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (106.2ms)
+
+
+Started GET "/camps" for 127.0.0.1 at 2016-02-07 22:01:28 +0800
+Processing by CampsController#index as HTML
+  Rendered camps/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 48ms (Views: 47.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/camps.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-02-07 22:01:28 +0800
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2016-02-07 22:01:28 +0800
+
+
+Started GET "/assets/scaffolds.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-02-07 22:01:28 +0800
+
+
+Started GET "/assets/bootstrap/alert.self-d8b7bd612b3dcfdefb7b5539b9d5848d66ccbd3e7af8bb8d48bfb3288aaa7be8.js?body=1" for 127.0.0.1 at 2016-02-07 22:01:28 +0800
+
+
+Started GET "/assets/application.self-e206702ff36375852deba9e1ccbbab414c4344dab62925e6095bf68ad4930de4.css?body=1" for 127.0.0.1 at 2016-02-07 22:01:28 +0800
+
+
+Started GET "/assets/bootstrap/affix.self-3555752f8a930795ee9e56751a52e6871104ae85d01b3ab8363da3802a5ecc78.js?body=1" for 127.0.0.1 at 2016-02-07 22:01:28 +0800
+
+
+Started GET "/assets/private_data.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-02-07 22:01:28 +0800
+
+
+Started GET "/assets/bootstrap/button.self-e74d33ba39500940a78d6fa4d2d64f6ca7fd86d60a2149641f7fde7ba711d8a1.js?body=1" for 127.0.0.1 at 2016-02-07 22:01:28 +0800
+
+
+Started GET "/assets/bootstrap/carousel.self-35d204878d906298e55bc24553e11fd89b980fc4ffe5792fe36af8c0da289c54.js?body=1" for 127.0.0.1 at 2016-02-07 22:01:28 +0800
+
+
+Started GET "/assets/bootstrap/collapse.self-056c40532d9f0f126ec17e839f60c942f573fbd61a086e7f156306e3fc5e8c1f.js?body=1" for 127.0.0.1 at 2016-02-07 22:01:28 +0800
+
+
+Started GET "/assets/bootstrap/dropdown.self-e56c2ffee4618411d43ecf15c89273f6223847ad756e1cd17545d04afa732ed4.js?body=1" for 127.0.0.1 at 2016-02-07 22:01:28 +0800
+
+
+Started GET "/assets/bootstrap/modal.self-62463080dba6b9d024ff0a3192da0e76eacbc683194f3395047c6f5cfa0acb59.js?body=1" for 127.0.0.1 at 2016-02-07 22:01:28 +0800
+
+
+Started GET "/assets/bootstrap/scrollspy.self-52afd90e8ba97d9f08617a13986e8869d6c4a45751c0bff59a6f91241e722aca.js?body=1" for 127.0.0.1 at 2016-02-07 22:01:28 +0800
+
+
+Started GET "/assets/bootstrap/tab.self-dad0d5c377f9fae26394484535ebb23ccf68afae084f896af6ea4cdf8c9f6ae0.js?body=1" for 127.0.0.1 at 2016-02-07 22:01:28 +0800
+
+
+Started GET "/assets/bootstrap/transition.self-3b268d4cd8c79e46ded7392885f72f64ffb5b0d49948a12b8cf9779f6163e13a.js?body=1" for 127.0.0.1 at 2016-02-07 22:01:28 +0800
+
+
+Started GET "/assets/bootstrap/tooltip.self-facdc69246a072acb927ded77ff655f7c27a518b9357fddd45d119fbc8a0ab9f.js?body=1" for 127.0.0.1 at 2016-02-07 22:01:28 +0800
+
+
+Started GET "/assets/bootstrap/popover.self-210cff1fb4b72b71a29b5122180cb5937c8145cd13a934dc838280f1d9607a3e.js?body=1" for 127.0.0.1 at 2016-02-07 22:01:28 +0800
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for 127.0.0.1 at 2016-02-07 22:01:28 +0800
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2016-02-07 22:01:28 +0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-02-07 22:01:28 +0800
+
+
+Started GET "/assets/camps.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-02-07 22:01:28 +0800
+
+
+Started GET "/assets/private_data.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-02-07 22:01:28 +0800
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 127.0.0.1 at 2016-02-07 22:01:28 +0800
+
+
+Started GET "/camps" for 127.0.0.1 at 2016-02-07 22:01:51 +0800
+Processing by CampsController#index as HTML
+  [1m[36mCamp Load (0.2ms)[0m  [1mSELECT "camps".* FROM "camps"[0m
+  Rendered camps/index.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 55ms (Views: 53.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/camps.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-02-07 22:01:51 +0800
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2016-02-07 22:01:51 +0800
+
+
+Started GET "/assets/scaffolds.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-02-07 22:01:51 +0800
+
+
+Started GET "/assets/private_data.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-02-07 22:01:51 +0800
+
+
+Started GET "/assets/bootstrap/affix.self-3555752f8a930795ee9e56751a52e6871104ae85d01b3ab8363da3802a5ecc78.js?body=1" for 127.0.0.1 at 2016-02-07 22:01:51 +0800
+
+
+Started GET "/assets/application.self-e206702ff36375852deba9e1ccbbab414c4344dab62925e6095bf68ad4930de4.css?body=1" for 127.0.0.1 at 2016-02-07 22:01:51 +0800
+
+
+Started GET "/assets/bootstrap/alert.self-d8b7bd612b3dcfdefb7b5539b9d5848d66ccbd3e7af8bb8d48bfb3288aaa7be8.js?body=1" for 127.0.0.1 at 2016-02-07 22:01:51 +0800
+
+
+Started GET "/assets/bootstrap/button.self-e74d33ba39500940a78d6fa4d2d64f6ca7fd86d60a2149641f7fde7ba711d8a1.js?body=1" for 127.0.0.1 at 2016-02-07 22:01:51 +0800
+
+
+Started GET "/assets/bootstrap/carousel.self-35d204878d906298e55bc24553e11fd89b980fc4ffe5792fe36af8c0da289c54.js?body=1" for 127.0.0.1 at 2016-02-07 22:01:51 +0800
+
+
+Started GET "/assets/bootstrap/collapse.self-056c40532d9f0f126ec17e839f60c942f573fbd61a086e7f156306e3fc5e8c1f.js?body=1" for 127.0.0.1 at 2016-02-07 22:01:51 +0800
+
+
+Started GET "/assets/bootstrap/dropdown.self-e56c2ffee4618411d43ecf15c89273f6223847ad756e1cd17545d04afa732ed4.js?body=1" for 127.0.0.1 at 2016-02-07 22:01:51 +0800
+
+
+Started GET "/assets/bootstrap/scrollspy.self-52afd90e8ba97d9f08617a13986e8869d6c4a45751c0bff59a6f91241e722aca.js?body=1" for 127.0.0.1 at 2016-02-07 22:01:51 +0800
+
+
+Started GET "/assets/bootstrap/tab.self-dad0d5c377f9fae26394484535ebb23ccf68afae084f896af6ea4cdf8c9f6ae0.js?body=1" for 127.0.0.1 at 2016-02-07 22:01:51 +0800
+
+
+Started GET "/assets/bootstrap/modal.self-62463080dba6b9d024ff0a3192da0e76eacbc683194f3395047c6f5cfa0acb59.js?body=1" for 127.0.0.1 at 2016-02-07 22:01:51 +0800
+
+
+Started GET "/assets/bootstrap/transition.self-3b268d4cd8c79e46ded7392885f72f64ffb5b0d49948a12b8cf9779f6163e13a.js?body=1" for 127.0.0.1 at 2016-02-07 22:01:51 +0800
+
+
+Started GET "/assets/bootstrap/tooltip.self-facdc69246a072acb927ded77ff655f7c27a518b9357fddd45d119fbc8a0ab9f.js?body=1" for 127.0.0.1 at 2016-02-07 22:01:51 +0800
+
+
+Started GET "/assets/bootstrap/popover.self-210cff1fb4b72b71a29b5122180cb5937c8145cd13a934dc838280f1d9607a3e.js?body=1" for 127.0.0.1 at 2016-02-07 22:01:51 +0800
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for 127.0.0.1 at 2016-02-07 22:01:51 +0800
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2016-02-07 22:01:51 +0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-02-07 22:01:51 +0800
+
+
+Started GET "/assets/camps.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-02-07 22:01:51 +0800
+
+
+Started GET "/assets/private_data.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-02-07 22:01:51 +0800
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 127.0.0.1 at 2016-02-07 22:01:51 +0800
+
+
+Started GET "/camps/new" for 127.0.0.1 at 2016-02-07 22:01:55 +0800
+Processing by CampsController#new as HTML
+  Rendered camps/_form.html.erb (27.8ms)
+  Rendered camps/new.html.erb within layouts/application (29.8ms)
+Completed 200 OK in 78ms (Views: 77.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/camps" for 127.0.0.1 at 2016-02-07 22:03:22 +0800
+Processing by CampsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"lUlfv4cOLjxgi8Qnhd8Anl178whLswkazbU6fXrOsmKtXX3PFhtJH+vYXX5uWGn16FroMFb1265fYE9A5VzLdA==", "camp"=>{"ind"=>"A06", "name"=>"2016 清大資工營", "cost"=>"5000", "day"=>"6", "date"=>"7/9-7/14", "num"=>"100", "account_name"=>"國立清華大學資訊工程研習營楊天琪", "account_ind"=>"700 06102-1-055640-0", "address"=>"300 新竹清大郵局2-257信箱", "contact"=>"", "expect"=>"", "intro"=>"", "ps"=>""}, "commit"=>"Create Camp"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "camps" ("ind", "name", "cost", "day", "date", "num", "account_name", "account_ind", "address", "contact", "expect", "intro", "ps", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["ind", "A06"], ["name", "2016 清大資工營"], ["cost", 5000], ["day", 6], ["date", "7/9-7/14"], ["num", 100], ["account_name", "國立清華大學資訊工程研習營楊天琪"], ["account_ind", "700 06102-1-055640-0"], ["address", "300 新竹清大郵局2-257信箱"], ["contact", ""], ["expect", ""], ["intro", ""], ["ps", ""], ["created_at", "2016-02-07 14:03:22.542694"], ["updated_at", "2016-02-07 14:03:22.542694"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+Redirected to http://127.0.0.1:3000/camps/6
+Completed 302 Found in 11ms (ActiveRecord: 1.2ms)
+
+
+Started GET "/camps/6" for 127.0.0.1 at 2016-02-07 22:03:22 +0800
+Processing by CampsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mCamp Load (0.2ms)[0m  [1mSELECT  "camps".* FROM "camps" WHERE "camps"."id" = ? LIMIT 1[0m  [["id", 6]]
+  Rendered camps/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 65ms (Views: 57.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/camps" for 127.0.0.1 at 2016-02-07 22:03:24 +0800
+Processing by CampsController#index as HTML
+  [1m[35mCamp Load (0.2ms)[0m  SELECT "camps".* FROM "camps"
+  Rendered camps/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 60ms (Views: 58.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/camps/6/edit" for 127.0.0.1 at 2016-02-07 22:03:31 +0800
+Processing by CampsController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mCamp Load (0.1ms)[0m  [1mSELECT  "camps".* FROM "camps" WHERE "camps"."id" = ? LIMIT 1[0m  [["id", 6]]
+  Rendered camps/_form.html.erb (6.0ms)
+  Rendered camps/edit.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 59ms (Views: 57.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-07 22:03:35 +0800
+Processing by PrivateDataController#index as HTML
+  Rendered private_data/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 56ms (Views: 55.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/camps" for 127.0.0.1 at 2016-02-07 22:03:37 +0800
+Processing by CampsController#index as HTML
+  [1m[35mCamp Load (0.1ms)[0m  SELECT "camps".* FROM "camps"
+  Rendered camps/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 67ms (Views: 65.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/camps/6/edit" for 127.0.0.1 at 2016-02-07 22:03:46 +0800
+Processing by CampsController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mCamp Load (0.1ms)[0m  [1mSELECT  "camps".* FROM "camps" WHERE "camps"."id" = ? LIMIT 1[0m  [["id", 6]]
+  Rendered camps/_form.html.erb (4.7ms)
+  Rendered camps/edit.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 84ms (Views: 82.6ms | ActiveRecord: 0.1ms)
+
+
+Started PATCH "/camps/6" for 127.0.0.1 at 2016-02-07 22:06:16 +0800
+Processing by CampsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"oUj0Tw3YbTlBLaj+KcVP5115wzmMJswV6k4fGHj+XgqZXNY/nM0KGsp+MafCQiaM6FjYAZFgHqF4m2ol52wnHA==", "camp"=>{"ind"=>"A06", "name"=>"2016 清大資工營", "cost"=>"5000", "day"=>"6", "date"=>"7/9-7/14", "num"=>"100", "account_name"=>"國立清華大學資訊工程研習營楊天琪", "account_ind"=>"700 06102-1-055640-0", "address"=>"300 新竹清大郵局2-257信箱", "contact"=>"營長 楊天琪 0927280922 miratain123@gmail.com 執秘 鄭安傑 0972295043 賀冠瑋 0921754337", "expect"=>"5", "intro"=>"Dropbox創辦人Drew Houston：「寫程式是世界上最接近超能力的事物。」程式語言，是個實現想像的畫筆，是人類最能讓 不可能成真的超能力、也是現代社會最具影響力也最被需求的的獨特才能。Apple創辦人Steve Jobs：「每個人都應該學習如何編寫程式，因為那能教你如何思考。」2016清大資工營，我們不僅要顛覆你的所有思考，還要給你五天難忘精彩的營隊生活，以及點燃所有人對電腦科學的熱情，帶你認識未來世界的浩瀚與非凡。", "ps"=>""}, "commit"=>"Update Camp", "id"=>"6"}
+  [1m[35mCamp Load (0.1ms)[0m  SELECT  "camps".* FROM "camps" WHERE "camps"."id" = ? LIMIT 1  [["id", 6]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  UPDATE "camps" SET "contact" = ?, "expect" = ?, "intro" = ?, "updated_at" = ? WHERE "camps"."id" = ?  [["contact", "營長 楊天琪 0927280922 miratain123@gmail.com 執秘 鄭安傑 0972295043 賀冠瑋 0921754337"], ["expect", "5"], ["intro", "Dropbox創辦人Drew Houston：「寫程式是世界上最接近超能力的事物。」程式語言，是個實現想像的畫筆，是人類最能讓 不可能成真的超能力、也是現代社會最具影響力也最被需求的的獨特才能。Apple創辦人Steve Jobs：「每個人都應該學習如何編寫程式，因為那能教你如何思考。」2016清大資工營，我們不僅要顛覆你的所有思考，還要給你五天難忘精彩的營隊生活，以及點燃所有人對電腦科學的熱情，帶你認識未來世界的浩瀚與非凡。"], ["updated_at", "2016-02-07 14:06:16.083465"], ["id", 6]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+Redirected to http://127.0.0.1:3000/camps/6
+Completed 302 Found in 10ms (ActiveRecord: 1.5ms)
+
+
+Started GET "/camps/6" for 127.0.0.1 at 2016-02-07 22:06:16 +0800
+Processing by CampsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[35mCamp Load (0.1ms)[0m  SELECT  "camps".* FROM "camps" WHERE "camps"."id" = ? LIMIT 1  [["id", 6]]
+  Rendered camps/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 73ms (Views: 70.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/camps" for 127.0.0.1 at 2016-02-07 22:06:17 +0800
+Processing by CampsController#index as HTML
+  [1m[36mCamp Load (0.2ms)[0m  [1mSELECT "camps".* FROM "camps"[0m
+  Rendered camps/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 62ms (Views: 61.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-07 22:11:20 +0800
+Processing by PrivateDataController#index as HTML
+  Rendered private_data/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 88ms (Views: 87.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/camps" for 127.0.0.1 at 2016-02-07 22:11:21 +0800
+Processing by CampsController#index as HTML
+  [1m[35mCamp Load (0.4ms)[0m  SELECT "camps".* FROM "camps"
+  Rendered camps/index.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 92ms (Views: 91.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/camps" for 127.0.0.1 at 2016-02-07 22:18:21 +0800
+Processing by CampsController#index as HTML
+  [1m[36mCamp Load (0.2ms)[0m  [1mSELECT "camps".* FROM "camps"[0m
+  Rendered camps/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 53ms (Views: 52.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/camps.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-02-07 22:18:22 +0800
+
+
+Started GET "/assets/private_data.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-02-07 22:18:22 +0800
+
+
+Started GET "/assets/scaffolds.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-02-07 22:18:22 +0800
+
+
+Started GET "/assets/application.self-e206702ff36375852deba9e1ccbbab414c4344dab62925e6095bf68ad4930de4.css?body=1" for 127.0.0.1 at 2016-02-07 22:18:22 +0800
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2016-02-07 22:18:22 +0800
+
+
+Started GET "/assets/bootstrap/affix.self-3555752f8a930795ee9e56751a52e6871104ae85d01b3ab8363da3802a5ecc78.js?body=1" for 127.0.0.1 at 2016-02-07 22:18:22 +0800
+
+
+Started GET "/assets/bootstrap/alert.self-d8b7bd612b3dcfdefb7b5539b9d5848d66ccbd3e7af8bb8d48bfb3288aaa7be8.js?body=1" for 127.0.0.1 at 2016-02-07 22:18:22 +0800
+
+
+Started GET "/assets/bootstrap/button.self-e74d33ba39500940a78d6fa4d2d64f6ca7fd86d60a2149641f7fde7ba711d8a1.js?body=1" for 127.0.0.1 at 2016-02-07 22:18:22 +0800
+
+
+Started GET "/assets/bootstrap/carousel.self-35d204878d906298e55bc24553e11fd89b980fc4ffe5792fe36af8c0da289c54.js?body=1" for 127.0.0.1 at 2016-02-07 22:18:22 +0800
+
+
+Started GET "/assets/bootstrap/collapse.self-056c40532d9f0f126ec17e839f60c942f573fbd61a086e7f156306e3fc5e8c1f.js?body=1" for 127.0.0.1 at 2016-02-07 22:18:22 +0800
+
+
+Started GET "/assets/bootstrap/dropdown.self-e56c2ffee4618411d43ecf15c89273f6223847ad756e1cd17545d04afa732ed4.js?body=1" for 127.0.0.1 at 2016-02-07 22:18:22 +0800
+
+
+Started GET "/assets/bootstrap/modal.self-62463080dba6b9d024ff0a3192da0e76eacbc683194f3395047c6f5cfa0acb59.js?body=1" for 127.0.0.1 at 2016-02-07 22:18:22 +0800
+
+
+Started GET "/assets/bootstrap/scrollspy.self-52afd90e8ba97d9f08617a13986e8869d6c4a45751c0bff59a6f91241e722aca.js?body=1" for 127.0.0.1 at 2016-02-07 22:18:22 +0800
+
+
+Started GET "/assets/bootstrap/tab.self-dad0d5c377f9fae26394484535ebb23ccf68afae084f896af6ea4cdf8c9f6ae0.js?body=1" for 127.0.0.1 at 2016-02-07 22:18:22 +0800
+
+
+Started GET "/assets/bootstrap/transition.self-3b268d4cd8c79e46ded7392885f72f64ffb5b0d49948a12b8cf9779f6163e13a.js?body=1" for 127.0.0.1 at 2016-02-07 22:18:22 +0800
+
+
+Started GET "/assets/bootstrap/tooltip.self-facdc69246a072acb927ded77ff655f7c27a518b9357fddd45d119fbc8a0ab9f.js?body=1" for 127.0.0.1 at 2016-02-07 22:18:22 +0800
+
+
+Started GET "/assets/bootstrap/popover.self-210cff1fb4b72b71a29b5122180cb5937c8145cd13a934dc838280f1d9607a3e.js?body=1" for 127.0.0.1 at 2016-02-07 22:18:22 +0800
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for 127.0.0.1 at 2016-02-07 22:18:22 +0800
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2016-02-07 22:18:22 +0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-02-07 22:18:22 +0800
+
+
+Started GET "/assets/camps.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-02-07 22:18:22 +0800
+
+
+Started GET "/assets/private_data.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-02-07 22:18:22 +0800
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 127.0.0.1 at 2016-02-07 22:18:22 +0800
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-07 22:30:46 +0800
+Processing by PrivateDataController#index as HTML
+  Rendered private_data/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 57ms (Views: 56.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/camps" for 127.0.0.1 at 2016-02-07 22:30:48 +0800
+Processing by CampsController#index as HTML
+  [1m[35mCamp Load (0.2ms)[0m  SELECT "camps".* FROM "camps"
+  Rendered camps/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 55ms (Views: 54.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2016-02-07 22:30:59 +0800
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (4.9ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (17.6ms)
+Completed 200 OK in 88ms (Views: 77.1ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2016-02-07 22:31:08 +0800
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"RNF7jgUZIrJy4aNeX0efopNuF+m/rIcBX5uFPJBNt7PedprpDeOngF3cqnsxklPvsdSX1TuXOQI2To3kufZLrw==", "user"=>{"email"=>"yesray0216@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"登入"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["email", "yesray0216@gmail.com"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE "users" SET "last_sign_in_at" = ?, "current_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["last_sign_in_at", "2016-02-07 11:27:45.677419"], ["current_sign_in_at", "2016-02-07 14:31:08.743202"], ["sign_in_count", 24], ["updated_at", "2016-02-07 14:31:08.744078"], ["id", 4]]
+  [1m[35m (0.7ms)[0m  commit transaction
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 104ms (ActiveRecord: 1.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-07 22:31:08 +0800
+Processing by PrivateDataController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 4]]
+  [1m[35mPrivateDatum Load (0.2ms)[0m  SELECT "private_data".* FROM "private_data"
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered private_data/index.html.erb within layouts/application (28.9ms)
+Completed 200 OK in 77ms (Views: 75.5ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/private_data/9" for 127.0.0.1 at 2016-02-07 22:31:10 +0800
+Processing by PrivateDataController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mPrivateDatum Load (0.2ms)[0m  [1mSELECT  "private_data".* FROM "private_data" WHERE "private_data"."id" = ? LIMIT 1[0m  [["id", 9]]
+  [1m[35mGender Load (0.1ms)[0m  SELECT  "genders".* FROM "genders" WHERE "genders"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mBirthy Load (0.1ms)[0m  [1mSELECT  "birthies".* FROM "birthies" WHERE "birthies"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mBirthm Load (0.1ms)[0m  SELECT  "birthms".* FROM "birthms" WHERE "birthms"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mBirthd Load (0.1ms)[0m  [1mSELECT  "birthds".* FROM "birthds" WHERE "birthds"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mBlood Load (0.1ms)[0m  SELECT  "bloods".* FROM "bloods" WHERE "bloods"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mSchoolg Load (0.1ms)[0m  [1mSELECT  "schoolgs".* FROM "schoolgs" WHERE "schoolgs"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mSchoolt Load (0.1ms)[0m  SELECT  "schoolts".* FROM "schoolts" WHERE "schoolts"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mVegetrian Load (0.1ms)[0m  [1mSELECT  "vegetrians".* FROM "vegetrians" WHERE "vegetrians"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mTshirtsize Load (0.1ms)[0m  SELECT  "tshirtsizes".* FROM "tshirtsizes" WHERE "tshirtsizes"."id" = ? LIMIT 1  [["id", 4]]
+  [1m[36mCamp Load (0.1ms)[0m  [1mSELECT  "camps".* FROM "camps" WHERE "camps"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "camps".* FROM "camps" WHERE "camps"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCamp Load (0.1ms)[0m  [1mSELECT  "camps".* FROM "camps" WHERE "camps"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered private_data/show.html.erb within layouts/application (50.2ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 4]]
+Completed 200 OK in 115ms (Views: 110.9ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/private_data/9/edit" for 127.0.0.1 at 2016-02-07 22:31:12 +0800
+Processing by PrivateDataController#edit as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mPrivateDatum Load (0.1ms)[0m  [1mSELECT  "private_data".* FROM "private_data" WHERE "private_data"."id" = ? LIMIT 1[0m  [["id", 9]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 4]]
+  [1m[36mGender Load (0.3ms)[0m  [1mSELECT "genders".* FROM "genders"[0m
+  [1m[35mBirthy Load (0.1ms)[0m  SELECT "birthies".* FROM "birthies"
+  [1m[36mBirthm Load (0.2ms)[0m  [1mSELECT "birthms".* FROM "birthms"[0m
+  [1m[35mBirthd Load (0.2ms)[0m  SELECT "birthds".* FROM "birthds"
+  [1m[36mBlood Load (0.2ms)[0m  [1mSELECT "bloods".* FROM "bloods"[0m
+  [1m[35mSchoolg Load (0.1ms)[0m  SELECT "schoolgs".* FROM "schoolgs"
+  [1m[36mSchoolt Load (0.2ms)[0m  [1mSELECT "schoolts".* FROM "schoolts"[0m
+  [1m[35mVegetrian Load (0.1ms)[0m  SELECT "vegetrians".* FROM "vegetrians"
+  [1m[36mTshirtsize Load (0.1ms)[0m  [1mSELECT "tshirtsizes".* FROM "tshirtsizes"[0m
+  [1m[35mCamp Load (0.3ms)[0m  SELECT "camps".* FROM "camps"
+  [1m[36mCACHE (0.1ms)[0m  [1mSELECT "camps".* FROM "camps"[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "camps".* FROM "camps"
+  Rendered private_data/_form.html.erb (30.6ms)
+  Rendered private_data/edit.html.erb within layouts/application (32.9ms)
+Completed 200 OK in 127ms (Views: 122.4ms | ActiveRecord: 2.1ms)
+
+
+Started PATCH "/private_data/9" for 127.0.0.1 at 2016-02-07 22:31:19 +0800
+Processing by PrivateDataController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"S+TDHD/KFtGvSPyM9mi+soz7HmZvkSVXHWGy1BXbsSvsXlMPKC8s9vr6oYZssJh8XT3b2sP1QOINyDob8NsWPQ==", "private_datum"=>{"name"=>"傅子睿", "nickname"=>"睿睿", "gender_id"=>"1", "birthy_id"=>"1", "birthm_id"=>"1", "birthd_id"=>"1", "personcard"=>"A127518717", "blood_id"=>"2", "school"=>"建國中學", "schoolg_id"=>"1", "schoolc"=>"13", "schoolt_id"=>"1", "address"=>"文山區", "email"=>"yesray0216@gmail.com", "fb"=>"facebook.com.tw/yesray0216", "cellphone"=>"0970850216", "urgentn"=>"林美芳", "urgentr"=>"母子", "urgentc"=>"0918358021", "specialeat"=>"無", "specialsick"=>"無", "vegetrian_id"=>"2", "tshirtsize_id"=>"4", "intro"=>"帥ㄍ", "fpick"=>"7", "spick"=>"4", "tpick"=>"8"}, "commit"=>"儲存送出", "id"=>"9"}
+  [1m[36mPrivateDatum Load (0.1ms)[0m  [1mSELECT  "private_data".* FROM "private_data" WHERE "private_data"."id" = ? LIMIT 1[0m  [["id", 9]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 4]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "private_data" SET "fpick" = ?, "spick" = ?, "tpick" = ?, "updated_at" = ? WHERE "private_data"."id" = ?  [["fpick", 7], ["spick", 4], ["tpick", 8], ["updated_at", "2016-02-07 14:31:19.253792"], ["id", 9]]
+  [1m[36m (8.9ms)[0m  [1mcommit transaction[0m
+Redirected to http://127.0.0.1:3000/private_data/9
+Completed 302 Found in 19ms (ActiveRecord: 9.5ms)
+
+
+Started GET "/private_data/9" for 127.0.0.1 at 2016-02-07 22:31:19 +0800
+Processing by PrivateDataController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[35mPrivateDatum Load (0.1ms)[0m  SELECT  "private_data".* FROM "private_data" WHERE "private_data"."id" = ? LIMIT 1  [["id", 9]]
+  [1m[36mGender Load (0.1ms)[0m  [1mSELECT  "genders".* FROM "genders" WHERE "genders"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mBirthy Load (0.1ms)[0m  SELECT  "birthies".* FROM "birthies" WHERE "birthies"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mBirthm Load (0.1ms)[0m  [1mSELECT  "birthms".* FROM "birthms" WHERE "birthms"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mBirthd Load (0.0ms)[0m  SELECT  "birthds".* FROM "birthds" WHERE "birthds"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mBlood Load (0.2ms)[0m  [1mSELECT  "bloods".* FROM "bloods" WHERE "bloods"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mSchoolg Load (0.1ms)[0m  SELECT  "schoolgs".* FROM "schoolgs" WHERE "schoolgs"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mSchoolt Load (0.1ms)[0m  [1mSELECT  "schoolts".* FROM "schoolts" WHERE "schoolts"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mVegetrian Load (0.1ms)[0m  SELECT  "vegetrians".* FROM "vegetrians" WHERE "vegetrians"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mTshirtsize Load (0.1ms)[0m  [1mSELECT  "tshirtsizes".* FROM "tshirtsizes" WHERE "tshirtsizes"."id" = ? LIMIT 1[0m  [["id", 4]]
+  [1m[35mCamp Load (0.1ms)[0m  SELECT  "camps".* FROM "camps" WHERE "camps"."id" = ? LIMIT 1  [["id", 7]]
+  [1m[36mCamp Load (0.1ms)[0m  [1mSELECT  "camps".* FROM "camps" WHERE "camps"."id" = ? LIMIT 1[0m  [["id", 4]]
+  [1m[35mCamp Load (0.1ms)[0m  SELECT  "camps".* FROM "camps" WHERE "camps"."id" = ? LIMIT 1  [["id", 8]]
+  Rendered private_data/show.html.erb within layouts/application (7.4ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 4]]
+Completed 200 OK in 84ms (Views: 81.4ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-07 22:31:23 +0800
+Processing by PrivateDataController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 4]]
+  [1m[36mPrivateDatum Load (0.1ms)[0m  [1mSELECT "private_data".* FROM "private_data"[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered private_data/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 49ms (Views: 47.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/private_data/9" for 127.0.0.1 at 2016-02-07 22:31:23 +0800
+Processing by PrivateDataController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[35mPrivateDatum Load (0.1ms)[0m  SELECT  "private_data".* FROM "private_data" WHERE "private_data"."id" = ? LIMIT 1  [["id", 9]]
+  [1m[36mGender Load (0.1ms)[0m  [1mSELECT  "genders".* FROM "genders" WHERE "genders"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mBirthy Load (0.1ms)[0m  SELECT  "birthies".* FROM "birthies" WHERE "birthies"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mBirthm Load (0.0ms)[0m  [1mSELECT  "birthms".* FROM "birthms" WHERE "birthms"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mBirthd Load (0.1ms)[0m  SELECT  "birthds".* FROM "birthds" WHERE "birthds"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mBlood Load (0.1ms)[0m  [1mSELECT  "bloods".* FROM "bloods" WHERE "bloods"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mSchoolg Load (0.1ms)[0m  SELECT  "schoolgs".* FROM "schoolgs" WHERE "schoolgs"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mSchoolt Load (0.1ms)[0m  [1mSELECT  "schoolts".* FROM "schoolts" WHERE "schoolts"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mVegetrian Load (0.1ms)[0m  SELECT  "vegetrians".* FROM "vegetrians" WHERE "vegetrians"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mTshirtsize Load (0.1ms)[0m  [1mSELECT  "tshirtsizes".* FROM "tshirtsizes" WHERE "tshirtsizes"."id" = ? LIMIT 1[0m  [["id", 4]]
+  [1m[35mCamp Load (0.1ms)[0m  SELECT  "camps".* FROM "camps" WHERE "camps"."id" = ? LIMIT 1  [["id", 7]]
+  [1m[36mCamp Load (0.1ms)[0m  [1mSELECT  "camps".* FROM "camps" WHERE "camps"."id" = ? LIMIT 1[0m  [["id", 4]]
+  [1m[35mCamp Load (0.1ms)[0m  SELECT  "camps".* FROM "camps" WHERE "camps"."id" = ? LIMIT 1  [["id", 8]]
+  Rendered private_data/show.html.erb within layouts/application (4.4ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 4]]
+Completed 200 OK in 61ms (Views: 58.4ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-07 22:31:25 +0800
+Processing by PrivateDataController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 4]]
+  [1m[36mPrivateDatum Load (0.2ms)[0m  [1mSELECT "private_data".* FROM "private_data"[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered private_data/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 55ms (Views: 53.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-07 22:55:11 +0800
+Processing by PrivateDataController#index as HTML
+  Rendered private_data/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 90ms (Views: 89.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/camps" for 127.0.0.1 at 2016-02-07 22:55:13 +0800
+Processing by CampsController#index as HTML
+  [1m[35mCamp Load (0.2ms)[0m  SELECT "camps".* FROM "camps"
+  Rendered camps/index.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 53ms (Views: 51.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-07 22:55:19 +0800
+Processing by PrivateDataController#index as HTML
+  Rendered private_data/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 46ms (Views: 45.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/camps" for 127.0.0.1 at 2016-02-07 22:55:21 +0800
+Processing by CampsController#index as HTML
+  [1m[36mCamp Load (0.2ms)[0m  [1mSELECT "camps".* FROM "camps"[0m
+  Rendered camps/index.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 57ms (Views: 56.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/camps" for 127.0.0.1 at 2016-02-07 23:10:09 +0800
+Processing by CampsController#index as HTML
+  [1m[35mCamp Load (0.3ms)[0m  SELECT "camps".* FROM "camps"
+  Rendered camps/index.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 59ms (Views: 57.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/camps.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-02-07 23:10:10 +0800
+
+
+Started GET "/assets/scaffolds.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-02-07 23:10:10 +0800
+
+
+Started GET "/assets/bootstrap/alert.self-d8b7bd612b3dcfdefb7b5539b9d5848d66ccbd3e7af8bb8d48bfb3288aaa7be8.js?body=1" for 127.0.0.1 at 2016-02-07 23:10:10 +0800
+
+
+Started GET "/assets/private_data.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-02-07 23:10:10 +0800
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2016-02-07 23:10:10 +0800
+
+
+Started GET "/assets/bootstrap/affix.self-3555752f8a930795ee9e56751a52e6871104ae85d01b3ab8363da3802a5ecc78.js?body=1" for 127.0.0.1 at 2016-02-07 23:10:10 +0800
+
+
+Started GET "/assets/bootstrap/carousel.self-35d204878d906298e55bc24553e11fd89b980fc4ffe5792fe36af8c0da289c54.js?body=1" for 127.0.0.1 at 2016-02-07 23:10:10 +0800
+
+
+Started GET "/assets/application.self-e206702ff36375852deba9e1ccbbab414c4344dab62925e6095bf68ad4930de4.css?body=1" for 127.0.0.1 at 2016-02-07 23:10:10 +0800
+
+
+Started GET "/assets/bootstrap/button.self-e74d33ba39500940a78d6fa4d2d64f6ca7fd86d60a2149641f7fde7ba711d8a1.js?body=1" for 127.0.0.1 at 2016-02-07 23:10:10 +0800
+
+
+Started GET "/assets/bootstrap/scrollspy.self-52afd90e8ba97d9f08617a13986e8869d6c4a45751c0bff59a6f91241e722aca.js?body=1" for 127.0.0.1 at 2016-02-07 23:10:10 +0800
+
+
+Started GET "/assets/bootstrap/transition.self-3b268d4cd8c79e46ded7392885f72f64ffb5b0d49948a12b8cf9779f6163e13a.js?body=1" for 127.0.0.1 at 2016-02-07 23:10:10 +0800
+
+
+Started GET "/assets/bootstrap/popover.self-210cff1fb4b72b71a29b5122180cb5937c8145cd13a934dc838280f1d9607a3e.js?body=1" for 127.0.0.1 at 2016-02-07 23:10:10 +0800
+
+
+Started GET "/assets/bootstrap/collapse.self-056c40532d9f0f126ec17e839f60c942f573fbd61a086e7f156306e3fc5e8c1f.js?body=1" for 127.0.0.1 at 2016-02-07 23:10:10 +0800
+
+
+Started GET "/assets/camps.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-02-07 23:10:10 +0800
+
+
+Started GET "/assets/bootstrap/dropdown.self-e56c2ffee4618411d43ecf15c89273f6223847ad756e1cd17545d04afa732ed4.js?body=1" for 127.0.0.1 at 2016-02-07 23:10:10 +0800
+
+
+Started GET "/assets/bootstrap/tab.self-dad0d5c377f9fae26394484535ebb23ccf68afae084f896af6ea4cdf8c9f6ae0.js?body=1" for 127.0.0.1 at 2016-02-07 23:10:10 +0800
+
+
+Started GET "/assets/bootstrap/tooltip.self-facdc69246a072acb927ded77ff655f7c27a518b9357fddd45d119fbc8a0ab9f.js?body=1" for 127.0.0.1 at 2016-02-07 23:10:10 +0800
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for 127.0.0.1 at 2016-02-07 23:10:10 +0800
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2016-02-07 23:10:10 +0800
+
+
+Started GET "/assets/private_data.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-02-07 23:10:10 +0800
+
+
+Started GET "/assets/bootstrap/modal.self-62463080dba6b9d024ff0a3192da0e76eacbc683194f3395047c6f5cfa0acb59.js?body=1" for 127.0.0.1 at 2016-02-07 23:10:10 +0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-02-07 23:10:10 +0800
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 127.0.0.1 at 2016-02-07 23:10:10 +0800
