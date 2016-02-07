@@ -1,0 +1,31 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  ind: MyString
+  name: MyString
+  cost: 1
+  day: 1
+  date: MyString
+  num: 1
+  account_name: MyString
+  account_ind: MyString
+  address: MyString
+  contact: MyString
+  expect: MyString
+  intro: MyString
+  ps: MyString
+
+two:
+  ind: MyString
+  name: MyString
+  cost: 1
+  day: 1
+  date: MyString
+  num: 1
+  account_name: MyString
+  account_ind: MyString
+  address: MyString
+  contact: MyString
+  expect: MyString
+  intro: MyString
+  ps: MyString

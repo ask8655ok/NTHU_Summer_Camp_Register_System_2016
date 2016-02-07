@@ -1,0 +1,51 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Camps</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Ind</th>
+      <th>Name</th>
+      <th>Cost</th>
+      <th>Day</th>
+      <th>Date</th>
+      <th>Num</th>
+      <th>Account name</th>
+      <th>Account ind</th>
+      <th>Address</th>
+      <th>Contact</th>
+      <th>Expect</th>
+      <th>Intro</th>
+      <th>Ps</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @camps.each do |camp| %>
+      <tr>
+        <td><%= camp.ind %></td>
+        <td><%= camp.name %></td>
+        <td><%= camp.cost %></td>
+        <td><%= camp.day %></td>
+        <td><%= camp.date %></td>
+        <td><%= camp.num %></td>
+        <td><%= camp.account_name %></td>
+        <td><%= camp.account_ind %></td>
+        <td><%= camp.address %></td>
+        <td><%= camp.contact %></td>
+        <td><%= camp.expect %></td>
+        <td><%= camp.intro %></td>
+        <td><%= camp.ps %></td>
+        <td><%= link_to 'Show', camp %></td>
+        <td><%= link_to 'Edit', edit_camp_path(camp) %></td>
+        <td><%= link_to 'Destroy', camp, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Camp', new_camp_path %>

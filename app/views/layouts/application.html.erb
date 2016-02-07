@@ -14,12 +14,14 @@
         <nav class="collapse navbar-collapse navbar-ex1-collapse">
         	<% if user_signed_in? -%>
 						<ul class="nav navbar-nav navbar-right">
+							<li><%= link_to '營隊資訊', camps_url %></li>
 							<li><%= link_to '新增報名', new_private_datum_path %></li>
 							<li><%= link_to '設定帳號', edit_user_registration_path %></li>
 							<li><%= link_to '登出系統', destroy_user_session_path, :method => :delete %></li>
 						</ul>
 					<% else -%>
 						<ul class="nav navbar-nav pull-right">
+							<li><%= link_to '營隊資訊', camps_url %></li>
 							<li><%= link_to '註冊系統', new_user_registration_path %></li>
 							<li><%= link_to '登入系統', new_user_session_path %></li>
 						</ul>
