@@ -1,5 +1,4 @@
 Rails.application.routes.draw do
-  resources :camps
   devise_for :users
   resources :private_data
   root to: "private_data#index"
