@@ -26,7 +26,7 @@
     <th><%= f.select :gender_id, options_from_collection_for_select(Gender.all, :id, :name, @private_datum.gender_id) %></th>
   </tr>
   <tr>
-    <th><%= f.label "生日" %>
+    <th><%= f.label "生日" %></th>
     <th><%= f.select :birthy_id, options_from_collection_for_select(Birthy.all, :id, :name, @private_datum.birthy_id) %>
 
     <%= f.label "/" %>
@@ -36,20 +36,24 @@
     <%= f.select :birthd_id, options_from_collection_for_select(Birthd.all, :id, :name, @private_datum.birthd_id) %></th>
   </tr>
   <tr>
-    <th><%= f.label "身分證字號" %>
+    <th><%= f.label "身分證字號" %></th>
     <th><%= f.text_field(:personcard, size: 10) %></th>
   </tr>
   <tr>
-    <th><%= f.label "血型" %>
+    <th><%= f.label "血型" %></th>
     <th><%= f.select :blood_id, options_from_collection_for_select(Blood.all, :id, :name, @private_datum.blood_id) %></th>
   </tr>
   <tr>
-    <th><%= f.label "學校" %>
+    <th><%= f.label "學校" %></th>
     <th><%= f.text_field(:school, size:14) %>
     <%= f.select :schoolg_id, options_from_collection_for_select(Schoolg.all, :id, :name, @private_datum.schoolg_id) %>
     <%= f.text_field(:schoolc, size: 2) %>
     <%= f.label "班" %>
     <%= f.select :schoolt_id, options_from_collection_for_select(Schoolt.all, :id, :name, @private_datum.schoolt_id) %></th>
+  </tr>
+  <tr>
+    <th>大頭貼</th>
+    <th><%= f.file_field :picture %></th>
   </tr>
   </tbody>
 

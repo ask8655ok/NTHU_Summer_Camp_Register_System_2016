@@ -1,4 +1,5 @@
 class PrivateDatum < ActiveRecord::Base
+	mount_uploader :picture, PictureUploader
 	belongs_to :gender
 	belongs_to :birthy
 	belongs_to :birthm

@@ -29,6 +29,10 @@
   <th>學校</th>
   <th><%= @private_datum.school+" "+Schoolg.find(@private_datum.schoolg_id).name+" "+@private_datum.schoolc+"班 "+Schoolt.find(@private_datum.schoolt_id).name %></th>
 </tr>
+<tr>
+  <th>大頭貼</th>
+  <th><%= image_tag(@private_datum.picture_url, width: 300) if @private_datum.picture.present? %></th>
+</tr>
 </tbody>
 </table>
 
