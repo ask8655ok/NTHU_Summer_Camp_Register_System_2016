@@ -3,7 +3,7 @@
   <% if private_datum.user==current_user %>
   <div class="private_datum row clearfix">
     <h2>
-      <%= link_to private_datum.name, private_datum %>
+      <%= link_to image_tag(private_datum.picture_url, width: 100), private_datum %>
       <small class="author"><%= time_ago_in_words(private_datum.created_at) %></small>
     </h2>
   </div>
