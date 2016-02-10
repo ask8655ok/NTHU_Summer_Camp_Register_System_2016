@@ -12,7 +12,7 @@
     <% @camps.each do |camp| %>
       <tr>
         <td><%= camp.ind %></td>
-        <td><%= link_to camp.name, camp %></td>
+        <td><%= link_to camp.name, camp, {:style=>'color:#000000'} %></td>
         <td><%= camp.date %></td>
       </tr>
     <% end %>
