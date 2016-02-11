@@ -1,8 +1,68 @@
 <% if user_signed_in? %>
+<% if current_user.wtf && current_user.wtf>=1 && current_user.wtf<=24 %>
+	<table class="table table-hover">
+		<thead>
+			<th>名稱</th>
+			<th>綽號</th>
+		</thead>
+
+		<tbody>
+			<p>第一順位</p>
+			<% @private_data.each do |private_datum| %>
+				<% if private_datum.fpick == current_user.wtf %>
+					<tr>
+						<th><%= link_to private_datum.name, private_datum, :style=>'color:#000000' %></th>
+						<th><%= private_datum.nickname %></th>
+					</tr>
+				<% end %>
+			<% end %>
+		</tbody>
+	</table>
+
+	<table class="table table-hover">
+		<thead>
+			<th>名稱</th>
+			<th>綽號</th>
+		</thead>
+		
+		<tbody>
+			<p>第二順位</p>
+			<% @private_data.each do |private_datum| %>
+				<% if private_datum.spick == current_user.wtf %>
+					<tr>
+						<th><%= link_to private_datum.name, private_datum, :style=>'color:#000000' %></th>
+						<th><%= private_datum.nickname %></th>
+					</tr>
+				<% end %>
+			<% end %>
+		</tbody>
+	</table>
+
+	<table class="table table-hover">
+		<thead>
+			<th>名稱</th>
+			<th>綽號</th>
+		</thead>
+		
+		<tbody>
+			<p>第三順位</p>
+			<% @private_data.each do |private_datum| %>
+				<% if private_datum.tpick == current_user.wtf %>
+					<tr>
+						<th><%= link_to private_datum.name, private_datum, :style=>'color:#000000' %></th>
+						<th><%= private_datum.nickname %></th>
+					</tr>
+				<% end %>
+			<% end %>
+		</tbody>
+	</table>
+
+<% else %>
 <% @private_data.each do |private_datum| %>
   <% if private_datum.user==current_user || current_user.wtf==777 %>
         <%= link_to image_tag(private_datum.picture_url, size: "140", class: "img-circle"), private_datum %>
   <% end %>
+<% end %>
 <% end %>
 
 <% else %>
