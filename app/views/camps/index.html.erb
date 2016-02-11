@@ -1,9 +1,9 @@
 <table class="table table-hover">
   <thead>
     <tr>
-      <th>Ind</th>
-      <th>Name</th>
-      <th>Date</th>
+      <th>營隊編號</th>
+      <th>營隊名稱</th>
+      <th>營隊日期</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -12,7 +12,7 @@
     <% @camps.each do |camp| %>
       <tr>
         <td><%= camp.ind %></td>
-        <td><%= link_to camp.name, camp, {:style=>'color:#000000'} %></td>
+        <td><%= link_to camp.name, camp, :style=>'color:#000000' %></td>
         <td><%= camp.date %></td>
       </tr>
     <% end %>

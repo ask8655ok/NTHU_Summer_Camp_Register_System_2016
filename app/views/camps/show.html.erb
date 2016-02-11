@@ -1,69 +1,53 @@
-<p id="notice"><%= notice %></p>
-
-<p>
-  <strong>Ind:</strong>
-  <%= @camp.ind %>
-</p>
-
-<p>
-  <strong>Name:</strong>
-  <%= @camp.name %>
-</p>
-
-<p>
-  <strong>Cost:</strong>
-  <%= @camp.cost %>
-</p>
-
-<p>
-  <strong>Day:</strong>
-  <%= @camp.day %>
-</p>
-
-<p>
-  <strong>Date:</strong>
-  <%= @camp.date %>
-</p>
-
-<p>
-  <strong>Num:</strong>
-  <%= @camp.num %>
-</p>
-
-<p>
-  <strong>Account name:</strong>
-  <%= @camp.account_name %>
-</p>
-
-<p>
-  <strong>Account ind:</strong>
-  <%= @camp.account_ind %>
-</p>
-
-<p>
-  <strong>Address:</strong>
-  <%= @camp.address %>
-</p>
-
-<p>
-  <strong>Contact:</strong>
-  <%= @camp.contact %>
-</p>
-
-<p>
-  <strong>Expect:</strong>
-  <%= @camp.expect %>
-</p>
-
-<p>
-  <strong>Intro:</strong>
-  <%= @camp.intro %>
-</p>
-
-<p>
-  <strong>Ps:</strong>
-  <%= @camp.ps %>
-</p>
-
-<%= link_to 'Edit', edit_camp_path(@camp) %> |
-<%= link_to 'Back', camps_path %>
+<table class="table table-hover">
+<tbody>
+  <tr>
+    <th>營隊編號</th>
+    <th><%= @camp.ind %></th>
+  </tr>
+  <tr>
+    <th>營隊名稱</th>
+    <th><%= @camp.name %></th>
+  </tr>
+  <tr>
+    <th>營隊天數</th>
+    <th><%= @camp.day %></th>
+  </tr>
+  <tr>
+    <th>營隊日期</th>
+    <th><%= @camp.date %></th>
+  </tr>
+  <tr>
+    <th>營隊費用</th>
+    <th><%= @camp.cost %></th>
+  </tr>
+  <tr>
+    <th>營隊人數</th>
+    <th><%= @camp.num %></th>
+  </tr>
+  <tr>
+    <th>營隊帳戶</th>
+    <th><%= @camp.account_name %>
+        <%= @camp.account_ind %></th>
+  </tr>
+  <tr>
+    <th>地址</th>
+    <th><%= @camp.address %></th>
+  </tr>
+  <tr>
+    <th>聯絡人</th>
+    <th><%= @camp.contact %></th>
+  </tr>
+  <tr>
+    <th>公佈日期</th>
+    <th><%= @camp.expect %></th>
+  </tr>
+  <tr>
+    <th>營隊介紹</th>
+    <th><%= @camp.intro %></th>
+  </tr>
+  <tr>
+    <th>備註</th>
+    <th><%= @camp.ps %></th>
+  </tr>
+</tbody>
+</table>
