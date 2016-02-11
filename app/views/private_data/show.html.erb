@@ -1,3 +1,4 @@
+<% if user_signed_in? %>
 <% if @private_datum.user==current_user || current_user.wtf==777 %>
 <table class="table table-hover">
   <col width="120">
@@ -138,4 +139,5 @@
   <%= link_to '刪除', @private_datum, method: :delete, data: { confirm: '刪除將無法復原，你確定？' }, class: "btn btn-danger" %>
   <% end %>
 </div>
+<% end %>
 <% end %>
