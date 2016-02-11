@@ -1,3 +1,4 @@
+<% if @private_datum.user==current_user || current_user.wtf==777 %>
 <table class="table table-hover">
   <col width="120">
   <col width="500">
@@ -133,5 +134,8 @@
 <div class="btn-group">
   <%= link_to '上一頁', private_data_path, class: "btn btn-primary" %>
   <%= link_to '編輯', edit_private_datum_path(@private_datum), class: "btn btn-primary" %>
+  <% if @private_datum.user==current_user %>
   <%= link_to '刪除', @private_datum, method: :delete, data: { confirm: '刪除將無法復原，你確定？' }, class: "btn btn-danger" %>
+  <% end %>
 </div>
+<% end %>
